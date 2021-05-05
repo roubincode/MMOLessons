@@ -1,0 +1,309 @@
+syntax = "proto3";
+package ETModel;
+
+/// <summary>
+/// MMOServer热更消息
+/// </summary>
+
+//测试向服务器发送消息
+message TestMessage_C2G  // IRequest
+{
+	int32 RpcId = 90;
+	string Info = 91;
+}
+//测试向服务器返回消息
+message TestMessage_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+//通知客户端踢下线消息
+message KickOutPlayer_R2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+	
+//客户端登陆网关请求
+message LoginGate_C2G // IRequest
+{
+	int32 RpcId = 90;
+	int64 GateLoginKey = 1;
+}
+//客户端登陆网关返回
+message LoginGate_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 UserId = 1;
+}
+
+//客户端登陆认证请求
+message Login_C2R // IRequest
+{
+	int32 RpcId = 90;
+	string Account = 1; 
+	string Password = 2; 
+}
+//客户端登陆认证返回
+message Login_R2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string GateAddress = 1;
+	int64 GateLoginKey = 2;
+}
+
+//退出登录
+message Logout_C2R // IMessage
+{
+	int32 RpcId = 90;
+	int64 UserId = 1;
+}
+
+//客户端注册请求
+message Register_C2R // IRequest
+{
+	int32 RpcId = 90;
+	string Account = 1; 
+	string Password = 2; 
+	int32 Partition = 3;
+}
+
+//客户端注册请求回复
+message Register_R2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+//获取用户信息
+message GetUserInfo_C2G // IRequest
+{
+	int32 RpcId = 90;
+}
+
+//返回用户信息
+message GetUserInfo_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string UserName = 1;
+	int64 Phone = 2;
+	string Email = 3;
+	string Sex = 4;
+	string Title = 5;
+}
+
+//设置用户信息
+message SetUserInfo_C2G // IRequest
+{
+	int32 RpcId = 90;
+	int64 Phone = 1;
+	string Email = 2;
+	string Sex = 3;
+	string Title = 4;
+}
+
+//返回设置用户信息
+message SetUserInfo_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 Phone = 1;
+	string Email = 2;
+	string Sex = 3;
+	string Title = 4;
+}
+
+//返回大厅
+message C2G_ReturnLobby // IMessage
+{
+	int32 RpcId = 90;
+}
+
+//进入地图(广播)
+message Actor_GamerEnterMap // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+    repeated GamerInfo Gamers = 1;
+}
+message Actor_GamerExitMap // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 93;
+    int64 UserId = 1;
+}
+
+
+
+//创建角色
+message CreateNewCharacter_C2G // IRequest
+{
+	int32 RpcId = 90;
+	int64 UserID = 1;
+	string Class = 2;
+	string Race = 3;
+	string Name = 4;
+	int32 Index = 5;
+	string Sex = 6;
+	int32 Max =7;
+	float X = 8;
+	float Y = 9;
+	float Z = 10;
+	string Region = 11;
+}
+message CharacterMessage_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	CharacterInfo Character = 1;
+}
+
+// 获取角色列表
+message GetCharacters_C2G // IRequest
+{
+	int32 RpcId = 90;
+}
+message GetCharacters_G2C // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	repeated CharacterInfo Characters = 1;
+}
+message GetCharacter_C2G // IRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 1;
+	int64 CharaId = 2;
+}
+
+
+//装备信息
+message EquipInfo
+{
+	int32 ItemID = 1;
+	string CatType = 2;
+	string Name = 3;
+	int32 Endurance = 4;
+	int32 Strength = 5;
+	int32 Intellect = 6;
+	int32 Agility = 7;
+	int32 Amount = 8;
+}
+
+//玩家信息
+message GamerInfo
+{
+	int64 UserId = 1; //玩家ID
+}
+
+//单个角色的简要描述
+message CharacterInfo
+{
+	int64 UserId = 1;
+	int64 CharaId = 2;
+	string Name = 3;
+	string Sex = 4;
+	string Class = 5;
+	string Race = 6;
+	int32 Level = 7;
+	int64 Experience = 8;
+	int32 Money = 9;
+	int32 Mail = 10;
+	string Title = 11;
+	int64 Map = 12;
+	int64 Region = 13;
+	float X = 14;
+	float Y = 15;
+	float Z = 16;
+	int32 Index = 17;
+	repeated EquipInfo Equipments = 18;
+}
+
+//ET----
+message C2R_Login // IRequest
+{
+	int32 RpcId = 90;
+	string	Account	 = 1;	// 帐号
+	string	Password = 2;	// 密码
+}
+
+message R2C_Login // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Address = 1;
+	int64 Key	    = 2;
+}
+
+message C2G_LoginGate // IRequest
+{
+	int32 RpcId = 90;
+	int64 Key = 1;	// 帐号
+}
+
+message G2C_LoginGate // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 PlayerId = 1;
+}
+
+message G2C_TestHotfixMessage // IMessage
+{
+	string Info = 1;
+}
+
+message C2M_TestActorRequest // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int64 ActorId = 91;
+	string Info = 1;
+}
+
+message M2C_TestActorResponse // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Info = 1;
+}
+
+message PlayerInfo // IMessage
+{
+	int32 RpcId = 90;
+}
+
+message C2G_PlayerInfo // IRequest
+{
+	int32 RpcId = 90;
+}
+
+message G2C_PlayerInfo // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	PlayerInfo PlayerInfo = 1;
+	repeated PlayerInfo PlayerInfos = 2;
+    repeated string TestRepeatedString = 3;
+    repeated int32 TestRepeatedInt32 = 4;
+    repeated int64 TestRepeatedInt64 = 5;
+}
+
+
+
+
