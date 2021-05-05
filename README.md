@@ -23,8 +23,8 @@
 1 用Visaul Studio 打开Server解决方案编译运行，或者命令行运行生成的App.dll  
 2 需要单独编译Server/Hotfix/Server.Hotfix.csproj　(用命令行或用visaul studio单独编译都可以)  
 
-### 网络游戏开发教学MMORPG课程案例教学
-https://www.taikr.com/course/1076
+### ET5.0 MMO网络游戏开发课程地址
+https://www.taikr.com/course/1196
 
 ## 交流与讨论：  
 [肉饼学习交流网站：](http://www.taikr.com) http://www.taikr.com  
