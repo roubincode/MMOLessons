@@ -36,19 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\MMORPG\Script\MMOGame\Factory\PlayerFactory.cs" />
      <Compile Include="Assets\MMORPG\Script\MMOGame\Factory\UIResources.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\Factory\UnitFactory.cs" />
      <Compile Include="Assets\MMORPG\Script\MMOGame\Factory\UnitResources.cs" />
      <Compile Include="Assets\MMORPG\Script\MMOGame\Init.cs" />
+     <Compile Include="Assets\MMORPG\Script\MMOGame\Manager\MMOManager.cs" />
      <Compile Include="Assets\MMORPG\Script\MMOGame\Other\DemoEventIdType.cs" />
      <Compile Include="Assets\MMORPG\Script\MMOGame\Other\UIType.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\UI\UILoading\UILoadingComponent.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\UI\UILoading\UILoadingFactory.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\UI\UILogin\UILoginComponent.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\UI\UILogin\UILoginFactory.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\UI\UIRegister\UIRegisterComponent.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\UI\UIRegister\UIRegisterFactory.cs" />
      <None Include="Assets\MMORPG\Script\MMOGame\MMOGame.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -244,30 +237,6 @@
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.ClipperLib">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/AstarPathfindingProject/Clipper/Pathfinding.ClipperLib.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/AstarPathfindingProject/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Poly2Tri">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/AstarPathfindingProject/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/Editor/npoi/NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OOXML">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/Editor/npoi/NPOI.OOXML.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/Editor/npoi/NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats">
-        <HintPath>D:/data/github/MMOLessons/Unity/Assets/Plugins/Editor/npoi/NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -631,6 +600,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="RPGGame.csproj">
+      <Project>{7eb7d28d-2154-c100-931f-3f6c8daa62f2}</Project>
+      <Name>RPGGame</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.ETCore.csproj">
       <Project>{a6ca2a50-5dca-8390-0b0c-0386cf76ae47}</Project>
       <Name>Unity.ETCore</Name>
