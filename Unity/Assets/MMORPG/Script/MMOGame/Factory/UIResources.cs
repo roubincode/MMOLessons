@@ -1,6 +1,6 @@
 using UnityEngine;
 using ETModel;
-namespace Demo
+namespace MMOGame
 {
     public static class UIResources
     {
@@ -10,7 +10,7 @@ namespace Demo
             ResourcesComponent resourcesComponent = Game.Scene.GetComponent<ResourcesComponent>();
             resourcesComponent.LoadBundle($"{type}.unity3d");
 
-            //加载登录注册界面预设并生成实例
+            //加载界面预设并生成实例
             GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset($"{type}.unity3d", $"{type}");
             GameObject go = UnityEngine.Object.Instantiate(bundleGameObject);
 

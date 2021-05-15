@@ -1,6 +1,6 @@
 using UnityEngine;
 using ETModel;
-namespace Demo
+namespace MMOGame
 {
     public static class UnitResources
     {
@@ -29,9 +29,7 @@ namespace Demo
             ResourcesComponent resourcesComponent = ETModel.Game.Scene.GetComponent<ResourcesComponent>();
             await resourcesComponent.LoadBundleAsync($"unit.unity3d");
 
-            Game.EventSystem.Run(EventIdType.UnitLoadFinished);
-
-            // resourcesComponent.UnloadBundle("unit.unity3d");
+            // Game.EventSystem.Run(EventIdType.UnitLoadFinished);
         }
 
     }
