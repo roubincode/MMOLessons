@@ -14,6 +14,7 @@ public class SelectRolePanel : BasePanel
 
     // 玩家已经创建角色
     private Player[] players;
+    private string[] nicks;
 
     protected override void Awake()
     {
@@ -31,10 +32,20 @@ public class SelectRolePanel : BasePanel
             mUIFacade.GetUI(StringManager.CreateRolePanel).EnterPanel();     
         });
 
+        btn_enterMap.onClick.SetListener(() => {
+            ExitPanel();
+            mUIFacade.ChangeScene(new CityScene(mUIFacade));
+            mUIFacade.ExitScene();
+           
+            RPGManager.Instance.CreateLocalPlayer();
+        });
+
         btn_back.onClick.SetListener(() => {
             ExitPanel();
             mUIFacade.ChangeScene(new AccountScene(mUIFacade));
             mUIFacade.ExitScene();//应该是加载新场景完成后执行，暂时直接这里调用
+
+            RPGManager.Instance.ClearPlayerList();
         });
     }
 
@@ -45,17 +56,18 @@ public class SelectRolePanel : BasePanel
         base.EnterPanel();
         RPGManager.Instance.CamLocation(RPGManager.Instance.selectRole_CamLocation);
 
+        // 动态生成内容不放在Start方法中，要放在EnterPanel方法中
         players = RPGManager.Instance.playerList.ToArray();
-        
+        nicks = RPGManager.Instance.playerNicks.ToArray();
         InitListView();
     }
 
     public override void ExitPanel()
     {
         base.ExitPanel();
-        // 更新局部lastPanel
+        // 更新局部lastPanel，此界面回退定回到登录界面
         lastPanel = PanelType.Login;
-
+        // 移除动态内容
         ClearPreview();
     }
 
@@ -64,13 +76,15 @@ public class SelectRolePanel : BasePanel
         if(players.Length>0){
             
             // 生成创建角色列表
-            foreach(Player player in players){
+            for(int i=0;i<players.Length;++i){
+                Player player = players[i];
                 GameObject preGo =  RPGManager.Instance.CreateItem(player.gameObject);
                 preGo.transform.parent = viewRoot;
                 preGo.transform.position = sp+=Vector3.left*1.2f;
                 preGo.transform.rotation = RPGManager.Instance.role_SpawnLoaction.rotation;
                 preGo.GetComponent<CharacterMovement>().enabled = false;
-                preGo.name = player.ClassName;
+                preGo.name = nicks[i];
+                preGo.GetComponent<Player>().nickName = nicks[i];
             }
         }  
     }

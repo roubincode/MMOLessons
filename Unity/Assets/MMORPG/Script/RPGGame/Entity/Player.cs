@@ -7,7 +7,7 @@ public partial class Player : Entity
 {
     
     public long CharaId;
-    
+    public string nickName;
     /// <summary>
     /// 角色职业图标
     /// </summary>

@@ -54,7 +54,6 @@ public class BasePanel : MonoBehaviour, IBasePanel
             mUIFacade.BackToPanel(mUIFacade.lastPanel);
         }
 
-        mUIFacade.lastPanel = thisPanel;
         ExitPanel();
     }
 }

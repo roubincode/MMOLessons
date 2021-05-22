@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: -5884023350808304235}
   - component: {fileID: -4182161343836428129}
   - component: {fileID: 157652554867902882}
+  - component: {fileID: 4335553994600537965}
   - component: {fileID: 2590701597297537830}
   m_Layer: 0
   m_Name: Mage
@@ -695,6 +696,19 @@ MonoBehaviour:
   rubberDistance: 1
   validSpeedTolerance: 0.2
   turnSmoothing: 0.5
+--- !u!114 &4335553994600537965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121082584879797669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa45812555112548a5d52c3e1a5760f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: 0
 --- !u!82 &2590701597297537830
 AudioSource:
   m_ObjectHideFlags: 0

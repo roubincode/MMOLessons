@@ -7,9 +7,11 @@ public class CityScene : SceneState
     public CityScene(UIFacade uIFacade) : base(uIFacade) { }
     public override void EnterScene()
     {
-        //mUIFacade.AddPanelToDict(StringManager.LoginPanel);
-        //mUIFacade.AddPanelToDict(StringManager.RegisterPanel);
+        mUIFacade.AddPanelToDict(StringManager.MapUIFramePanel);
+        mUIFacade.AddPanelToDict(StringManager.SettingPanel);
         base.EnterScene();
+
+        mUIFacade.GetUI(StringManager.MapUIFramePanel).EnterPanel();     
     }
 
 }

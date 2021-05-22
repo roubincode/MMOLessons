@@ -23,14 +23,5 @@ namespace MMOGame
             return prefabs;
         }
 
-        public static async ETVoid LoadUnitAsync()
-        {
-            // 加载Unit资源
-            ResourcesComponent resourcesComponent = ETModel.Game.Scene.GetComponent<ResourcesComponent>();
-            await resourcesComponent.LoadBundleAsync($"unit.unity3d");
-
-            // Game.EventSystem.Run(EventIdType.UnitLoadFinished);
-        }
-
     }
 }

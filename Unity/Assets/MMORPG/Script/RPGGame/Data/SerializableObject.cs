@@ -28,7 +28,45 @@ public struct Character
     public int index {get;set;}
     public EquipInfo[] equipDatas {get;set;}
 }
+[Serializable]
+public struct ChatMessage
+{
+    public string sender;
+    public string identifier;
+    public string message;
+    public GameObject textPrefab;
 
+    public ChatMessage(string sender, string identifier, string message, GameObject textPrefab)
+    {
+        this.sender = sender;
+        this.identifier = identifier;
+        this.message = message;
+        this.textPrefab = textPrefab;
+    }
+
+    // construct the message
+    public string Construct()
+    {
+        return "<b>" + sender + identifier + ":</b> " + message;
+    }
+}
+[Serializable]
+public class ChannelInfo
+{
+    public string command; // /w etc.
+    public string identifierOut; // for sending
+    public string identifierIn; // for receiving
+    public GameObject textPrefab;
+    public Color textColor;
+
+    public ChannelInfo(string command, string identifierOut, string identifierIn, GameObject textPrefab)
+    {
+        this.command = command;
+        this.identifierOut = identifierOut;
+        this.identifierIn = identifierIn;
+        this.textPrefab = textPrefab;
+    }
+}
 [Serializable]
 public struct Account{
     public long accountId {get;set;}
