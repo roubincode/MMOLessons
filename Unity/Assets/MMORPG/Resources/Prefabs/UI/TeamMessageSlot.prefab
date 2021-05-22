@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6244837324996077972}
   - component: {fileID: 7723524105833494658}
-  - component: {fileID: 3209799466308189758}
   - component: {fileID: 6393007119410853164}
   m_Layer: 5
   m_Name: TeamMessageSlot
@@ -46,25 +45,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5205475771118431237}
   m_CullTransparentMesh: 0
---- !u!114 &3209799466308189758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5205475771118431237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f89385a144c96498ab94fd20112f8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 6393007119410853164}
-  message:
-    sender: 
-    identifier: 
-    message: 
-    textPrefab: {fileID: 0}
-  mouseOverStyle: 2
 --- !u!114 &6393007119410853164
 MonoBehaviour:
   m_ObjectHideFlags: 0

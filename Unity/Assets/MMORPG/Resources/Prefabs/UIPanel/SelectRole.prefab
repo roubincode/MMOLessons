@@ -1137,7 +1137,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7945485265103497033}
   - component: {fileID: 7945485265103497035}
-  - component: {fileID: 7766883520523499390}
   m_Layer: 5
   m_Name: SelectRole
   m_TagString: Untagged
@@ -1177,21 +1176,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7945485265103497032}
   m_CullTransparentMesh: 0
---- !u!114 &7766883520523499390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7945485265103497032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c437db33d136754c94af75e28c9b8f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn_enterMap: {fileID: 256348811735890364}
-  btn_Create: {fileID: 6769419137868250653}
-  btn_back: {fileID: 5440978953106017277}
 --- !u!1 &7959939179932103674
 GameObject:
   m_ObjectHideFlags: 0

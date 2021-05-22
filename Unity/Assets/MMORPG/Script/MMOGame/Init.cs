@@ -46,7 +46,7 @@ namespace MMOGame{
 
 				// 加载角色unit资源
 				Game.Scene.GetComponent<ResourcesComponent>().LoadBundle("unit.unity3d");
-				RPGManager.Instance.playerClasses = MMOManager.Instance.FindPlayerClasses();
+				
 
 				UnitConfig unitConfig = (UnitConfig)Game.Scene.GetComponent<ConfigComponent>().Get(typeof(UnitConfig), 1001);
 				Log.Debug($"config {JsonHelper.ToJson(unitConfig)}");
