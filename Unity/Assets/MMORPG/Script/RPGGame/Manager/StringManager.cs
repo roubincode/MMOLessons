@@ -7,9 +7,10 @@ public class StringManager
     public const string LoadScenePanel = "LoadScene";
     public const string CreateRolePanel = "CreateRole";
     public const string SelectRolePanel = "SelectRole";
+    public const string MapUIFramePanel = "MapUIFrame";
     public const string LoginPanel = "Login";
     public const string RegisterPanel = "Register";
-    public const string SetPanel = "Setting";
+    public const string SettingPanel = "Setting";
     public const string HelpPanel = "Help";
 }
 
@@ -19,6 +20,7 @@ public enum PanelType{
     Setting,
     SelectRole,
     CreateRole,
+    MapUIFrame,
     Help,
     Null
 }

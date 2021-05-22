@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 /// <summary>
 /// 游戏总管理,负责管理其他所有的管理者
 /// </summary>
@@ -15,9 +16,18 @@ public class RPGManager : MonoBehaviour
     public Transform role_PreviewCamLoaction;
     public Transform role_SpawnLoaction;
 
-    // 可选角色列类列表
+    // 可选角色类集
     [HideInInspector] public List<Player> playerClasses = new List<Player>(); 
+    // 创建的角色集
     [HideInInspector] public List<Player> playerList = new List<Player>();
+    // 创建的角色昵称集
+    [HideInInspector] public List<string> playerNicks = new List<string>();
+
+    // 选中的进入游戏地图场景的本地角色
+    private GameObject localPlayer;
+
+    public string selectClass;
+    public string selectName;
 
     private void Awake()
     {
@@ -33,6 +43,29 @@ public class RPGManager : MonoBehaviour
         
     }
 
+    public void CreateLocalPlayer(){
+        Player player = playerClasses.ToList().Find(p => p.ClassName == selectClass);
+        localPlayer =  RPGManager.Instance.CreateItem(player.gameObject);
+        localPlayer.transform.position = role_SpawnLoaction.position;
+        localPlayer.transform.rotation = role_SpawnLoaction.rotation;
+        localPlayer.GetComponent<CharacterMovement>().enabled = true;
+        localPlayer.name = selectName;
+        localPlayer.GetComponent<Player>().nickName = selectName;
+        CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
+        cameraMMO.enabled = true;
+        cameraMMO.target = localPlayer.transform;
+    }
+
+    public void ClearLoaclPlayer(){
+        CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
+        cameraMMO.enabled = false;
+        cameraMMO.target = null;
+        if(localPlayer!=null) Destroy(localPlayer);
+    }
+
+    public void ClearPlayerList(){
+        playerList.Clear();
+    }
 
     // 将游戏物体放回对象池的方法
     public void PushItem(FactoryType factoryType, string itemName, GameObject item)
@@ -49,6 +82,13 @@ public class RPGManager : MonoBehaviour
     public void CamLocation(Transform location){
         Camera.main.transform.position = location.position;
         Camera.main.transform.rotation = location.rotation;
+    }
+
+    public void NoneSelectd(){
+        foreach(Player player in playerList){
+            selectClass = "";
+            player.GetComponent<SelectableCharacter>().selected = false;
+        }  
     }
 
     // 实例化游戏物体的方法

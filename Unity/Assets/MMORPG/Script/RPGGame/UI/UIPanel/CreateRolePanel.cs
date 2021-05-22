@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using System.Text.RegularExpressions;
 /// <summary>
 /// 新建角色面板
 /// </summary>
@@ -10,7 +11,7 @@ public class CreateRolePanel : BasePanel
     public Button btn_back;
     public Transform content;
     public UIRoleClassSlot slotPrefab;
-
+    public InputField inputName;
     private Transform viewRoot;
     private GameObject preGo;
     private string preName;
@@ -34,8 +35,14 @@ public class CreateRolePanel : BasePanel
             base.BackToPanel();
         });
         btn_Submit.onClick.SetListener(() => {
+            string nickName = Regex.Replace(inputName.text, @"\s", "");
+            if(nickName =="") return;
             Player player = classes.ToList().Find(p => p.ClassName == preName);
+            RPGManager.Instance.selectName = inputName.text;
             RPGManager.Instance.playerList.Add(player);
+            RPGManager.Instance.playerNicks.Add(nickName);
+
+            inputName.text = "";
             base.BackToPanel();
         });
     }
@@ -53,8 +60,11 @@ public class CreateRolePanel : BasePanel
         GetComponent<RectTransform>().offsetMax = new Vector2(0.0f, 0.0f);
         base.EnterPanel();
 
+        // 动态生成内容不放在Start方法中，要放在EnterPanel方法中
         InitPreview();
-
+        UITab uiTab = GetComponent<UITab>();
+        uiTab.action = PreviewRole;
+        uiTab.RefreshTab();
         // 默认预览职业与预览相机位置
         RPGManager.Instance.CamLocation(RPGManager.Instance.role_PreviewCamLoaction);
         PreviewRole(classes[0].ClassName);
@@ -63,6 +73,7 @@ public class CreateRolePanel : BasePanel
     public override void ExitPanel()
     {
         base.ExitPanel();
+        // 移除动态内容
         ClearPreview();
     }
 
@@ -74,14 +85,9 @@ public class CreateRolePanel : BasePanel
             UIRoleClassSlot slot = go.GetComponent<UIRoleClassSlot>();
             slot.nameText.text = player.CNName;
             slot.image.sprite = player.portraitIcon;
+            go.name = player.ClassName;
 
             if(copy==0) defaultSlot = slot;
-
-            // 选定职业点击事件
-            slot.button.onClick.SetListener(() => {
-                PreviewRole(player.ClassName);     
-            });
-
             // posY位置
             go.GetComponent<RectTransform>().anchoredPosition = new Vector2(0.0f, -copy);
             copy += 55;
@@ -100,6 +106,7 @@ public class CreateRolePanel : BasePanel
     void ClearPreview(){
         for (int i = viewRoot.childCount - 1; i >= 0; i--) {
             Destroy(viewRoot.GetChild(i).gameObject);
+            Destroy(content.GetChild(i).gameObject);
         }
     }
 

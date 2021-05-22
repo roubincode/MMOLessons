@@ -40,8 +40,6 @@
      <Compile Include="Assets\MMORPG\Script\MMOGame\Factory\UnitResources.cs" />
      <Compile Include="Assets\MMORPG\Script\MMOGame\Init.cs" />
      <Compile Include="Assets\MMORPG\Script\MMOGame\Manager\MMOManager.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\Other\DemoEventIdType.cs" />
-     <Compile Include="Assets\MMORPG\Script\MMOGame\Other\UIType.cs" />
      <None Include="Assets\MMORPG\Script\MMOGame\MMOGame.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

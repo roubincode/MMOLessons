@@ -15,7 +15,7 @@ public class RoleScene : SceneState
         
         // 打开SelectRolePanel
         mUIFacade.GetUI(StringManager.SelectRolePanel).EnterPanel();
-         Camera.main.GetComponent<Animator>().enabled = false;
+        Camera.main.GetComponent<Animator>().enabled = false;
     }
 
 }

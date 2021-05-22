@@ -2822,6 +2822,7 @@ GameObject:
   - component: {fileID: 3728906380204217656}
   - component: {fileID: 7155940634006131554}
   - component: {fileID: 8908113282264573413}
+  - component: {fileID: 7454823000484334804}
   - component: {fileID: 3254890433584098165}
   m_Layer: 0
   m_Name: Barbarian
@@ -3011,6 +3012,19 @@ MonoBehaviour:
   rubberDistance: 1
   validSpeedTolerance: 0.2
   turnSmoothing: 0.5
+--- !u!114 &7454823000484334804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7460566571953217099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa45812555112548a5d52c3e1a5760f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: 0
 --- !u!82 &3254890433584098165
 AudioSource:
   m_ObjectHideFlags: 0

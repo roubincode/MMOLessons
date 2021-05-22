@@ -21,17 +21,5 @@ namespace MMOGame
             return ui;
         }
 
-        public static UI GetLoading(string type = "")
-        {
-            //加载Loading预设并生成实例
-            GameObject bundleGameObject = (GameObject)ResourcesHelper.Load("Loading");
-			GameObject go = UnityEngine.Object.Instantiate(bundleGameObject);
-
-            //设置UI层级，只有UI摄像机可以渲染
-            go.layer = LayerMask.NameToLayer(LayerNames.UI);
-            UI ui = ComponentFactory.Create<UI, GameObject>(go);
-	        
-            return ui;
-        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
+using System.Collections.Generic;
 public class UIUtils
 {
     // 删除道具时,即使删除Cotent下的格子物体,还是会再创建新的格子实例
@@ -37,5 +37,15 @@ public class UIUtils
             !Input.GetMouseButton(1) &&
             !Input.GetMouseButton(2))
             EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    public bool IsPointerOverUIObject(Vector2 screenPosition)
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(screenPosition.x, screenPosition.y);
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
     }
 }
