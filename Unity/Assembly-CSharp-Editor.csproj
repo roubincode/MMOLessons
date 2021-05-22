@@ -36,8 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\MapVillageSelect\Terrains\Environment\Water\Editor\WaterBaseEditor.cs" />
-     <Compile Include="Assets\MapVillageSelect\Terrains\Environment\Water\Editor\WaterEditorUtility.cs" />
+     <Compile Include="Assets\ETFramework\Editor\BuildEditor\BuildAssetBundles.cs" />
+     <Compile Include="Assets\ETFramework\Editor\BuildEditor\BuildEditor.cs" />
+     <Compile Include="Assets\ETFramework\Editor\BuildEditor\BuildHelper.cs" />
+     <Compile Include="Assets\ETFramework\Editor\BuildEditor\BuildHotfixEditor.cs" />
+     <Compile Include="Assets\ETFramework\Editor\GlobalConfigEditor\GlobalConfigEditor.cs" />
+     <Compile Include="Assets\ETFramework\Editor\Helper\EditorResHelper.cs" />
+     <Compile Include="Assets\ETFramework\Editor\Proto2CsEditor\InnerProto2CS.cs" />
+     <Compile Include="Assets\ETFramework\Editor\Proto2CsEditor\Proto2CSEditor.cs" />
+     <Compile Include="Assets\ETFramework\Editor\ReferenceCollectorEditor\ReferenceCollectorEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -605,6 +612,9 @@
     <Reference Include="Unity.CollabProxy.Editor">
         <HintPath>D:/data/github/MMOLessons/Unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>D:/data/github/MMOLessons/Unity/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>D:/data/github/MMOLessons/Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -620,22 +630,6 @@
     <ProjectReference Include="Unity.ThirdParty.csproj">
       <Project>{d2ad5be1-263a-9a30-ab0f-dc5b08044350}</Project>
       <Name>Unity.ThirdParty</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Editor.csproj">
-      <Project>{041131cd-3018-19b1-81b6-5dbee2467ffb}</Project>
-      <Name>Unity.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="MMOGame.csproj">
-      <Project>{c8d059a3-91d9-e4cf-4b21-86a7b91f286d}</Project>
-      <Name>MMOGame</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ETCore.csproj">
-      <Project>{a6ca2a50-5dca-8390-0b0c-0386cf76ae47}</Project>
-      <Name>Unity.ETCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Model.csproj">
-      <Project>{9498bfb4-d9f5-c441-13e3-3f26f7700e29}</Project>
-      <Name>Unity.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
