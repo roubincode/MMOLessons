@@ -40,13 +40,10 @@
      <Compile Include="Assets\ResLibrary\MapFrostwind\Effects\ImageEffects\Scripts\GlobalFog.cs" />
      <Compile Include="Assets\ResLibrary\MapFrostwind\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\SkeletonWarrior\Shaders\DiffuseDoubleSide.shader" />
-     <None Include="Assets\ETFramework\Bundles\Config\BuffConfig.txt" />
      <None Include="Assets\ResLibrary\MapFrostwind\Effects\ImageEffects\Shaders\GlobalFog.shader" />
-     <None Include="Assets\ETFramework\Bundles\Config\StartZoneConfig.txt" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\PaladinMan\Shaders\DiffuseDoubleSide.shader" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\PaladinWoman\Shaders\DiffuseDoubleSide.shader" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\SkeletonMage\Shaders\DiffuseDoubleSide.shader" />
-     <None Include="Assets\ETFramework\Bundles\Config\UnitConfig.txt" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\Goblin\Shaders\DiffuseDoubleSide.shader" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\GoblinArcher\Shaders\DiffuseDoubleSide.shader" />
      <None Include="Assets\ResLibrary\MapFrostwind\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
@@ -55,12 +52,9 @@
      <None Include="Assets\ResLibrary\MapFrostwind\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\ResLibrary\MapFrostwind\Info\FWM_Info.txt" />
-     <None Include="Assets\ETFramework\Bundles\Config\GlobalProto.txt" />
-     <None Include="Assets\ETFramework\Bundles\Config\StartSceneConfig.txt" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\Mage\Shaders\DiffuseDoubleSide.shader" />
      <None Include="Assets\ResLibrary\MapFrostwind\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\ResLibrary\CharasFantasy\FantasyStarterPack\FlyingDragon\Shaders\DiffuseDoubleSide.shader" />
-     <None Include="Assets\ETFramework\Bundles\Config\StartProcessConfig.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -631,10 +625,6 @@
       <Project>{d2ad5be1-263a-9a30-ab0f-dc5b08044350}</Project>
       <Name>Unity.ThirdParty</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Editor.csproj">
-      <Project>{041131cd-3018-19b1-81b6-5dbee2467ffb}</Project>
-      <Name>Unity.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="RPGGame.csproj">
       <Project>{7eb7d28d-2154-c100-931f-3f6c8daa62f2}</Project>
       <Name>RPGGame</Name>
@@ -642,14 +632,6 @@
     <ProjectReference Include="MMOGame.csproj">
       <Project>{c8d059a3-91d9-e4cf-4b21-86a7b91f286d}</Project>
       <Name>MMOGame</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ETCore.csproj">
-      <Project>{a6ca2a50-5dca-8390-0b0c-0386cf76ae47}</Project>
-      <Name>Unity.ETCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Model.csproj">
-      <Project>{9498bfb4-d9f5-c441-13e3-3f26f7700e29}</Project>
-      <Name>Unity.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
