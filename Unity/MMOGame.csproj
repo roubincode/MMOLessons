@@ -598,10 +598,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="RPGGame.csproj">
-      <Project>{7eb7d28d-2154-c100-931f-3f6c8daa62f2}</Project>
-      <Name>RPGGame</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.ETCore.csproj">
       <Project>{a6ca2a50-5dca-8390-0b0c-0386cf76ae47}</Project>
       <Name>Unity.ETCore</Name>
@@ -613,6 +609,10 @@
     <ProjectReference Include="Unity.ThirdParty.csproj">
       <Project>{d2ad5be1-263a-9a30-ab0f-dc5b08044350}</Project>
       <Name>Unity.ThirdParty</Name>
+    </ProjectReference>
+    <ProjectReference Include="RPGGame.csproj">
+      <Project>{7eb7d28d-2154-c100-931f-3f6c8daa62f2}</Project>
+      <Name>RPGGame</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

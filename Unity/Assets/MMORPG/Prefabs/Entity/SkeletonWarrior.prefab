@@ -2091,6 +2091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7037213763458844009}
   - component: {fileID: 3983742242988334867}
+  - component: {fileID: -3163768673985515898}
   m_Layer: 0
   m_Name: SkeletonWarrior
   m_TagString: Untagged
@@ -2134,6 +2135,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3163768673985515898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83abeeb6d2acc804d8c043a9de327779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitId: 0
+  CNName: "\u9AB7\u9AC5\u6218\u58EB"
+  ClassName: SkeletonWarrior
+  animator: {fileID: 0}
+  collider: {fileID: 0}
+  audioSource: {fileID: 0}
+  inbattle: 0
+  _gold: 0
+  _state: IDLE
+  CharaId: 0
+  nickName: 
+  classIcon: {fileID: 0}
+  portraitIcon: {fileID: 0}
 --- !u!1 &8026988193104672097
 GameObject:
   m_ObjectHideFlags: 0

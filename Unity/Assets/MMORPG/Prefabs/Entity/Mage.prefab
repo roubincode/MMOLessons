@@ -2883,6 +2883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7217786729767046981}
   - component: {fileID: 3659902705087206719}
+  - component: {fileID: -8934043949846182926}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Untagged
@@ -2926,6 +2927,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-8934043949846182926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8025812999803196927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83abeeb6d2acc804d8c043a9de327779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitId: 0
+  CNName: "\u9ED1\u6697\u6CD5\u5E08"
+  ClassName: Mage
+  animator: {fileID: 0}
+  collider: {fileID: 0}
+  audioSource: {fileID: 0}
+  inbattle: 0
+  _gold: 0
+  _state: IDLE
+  CharaId: 0
+  nickName: 
+  classIcon: {fileID: 0}
+  portraitIcon: {fileID: 0}
 --- !u!1 &8059275347862543768
 GameObject:
   m_ObjectHideFlags: 0

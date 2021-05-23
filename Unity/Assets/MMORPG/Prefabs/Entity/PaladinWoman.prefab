@@ -1750,6 +1750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8578825469752614869}
   - component: {fileID: 2444945091862742447}
+  - component: {fileID: 751118595611850981}
   m_Layer: 0
   m_Name: PaladinWoman
   m_TagString: Untagged
@@ -1794,3 +1795,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &751118595611850981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8954788711306741103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83abeeb6d2acc804d8c043a9de327779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitId: 0
+  CNName: "\u5973\u6218\u58EB"
+  ClassName: PaladinWoman
+  animator: {fileID: 0}
+  collider: {fileID: 0}
+  audioSource: {fileID: 0}
+  inbattle: 0
+  _gold: 0
+  _state: IDLE
+  CharaId: 0
+  nickName: 
+  classIcon: {fileID: 0}
+  portraitIcon: {fileID: 0}

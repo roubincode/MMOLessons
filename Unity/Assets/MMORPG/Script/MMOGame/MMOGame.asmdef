@@ -1,17 +1,18 @@
 {
     "name": "MMOGame",
     "references": [
-        "RPGGame",
         "Unity.ETCore",
         "Unity.Model",
-        "Unity.ThirdParty"
+        "Unity.ThirdParty",
+        "RPGGame"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
