@@ -6,7 +6,7 @@ public class CameraMMO : MonoBehaviour
 
     public int mouseButton = 1; // right button by default
 
-    public float distance = 20;
+    public float distance = 5;
     public float minDistance = 3;
     public float maxDistance = 20;
 
@@ -18,7 +18,7 @@ public class CameraMMO : MonoBehaviour
     public float xMaxAngle = 80;
 
     // 与角色之间的偏移量
-    public Vector3 offset = Vector3.zero;
+    public Vector3 offset = new Vector3(0,1.5f,0);
 
     // 设置哪些layer的物体不可以遮挡摄像机
     public LayerMask viewBlockingLayers;

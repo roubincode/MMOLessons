@@ -11,10 +11,10 @@ public class RPGManager : MonoBehaviour
     public FactoryManager FactoryManager { get; private set; }
     public UIManager UIManager { get; private set; }
 
-    public Transform selectRole_CamLocation;
-    public Transform role_PreviewLoaction;
-    public Transform role_PreviewCamLoaction;
-    public Transform role_SpawnLoaction;
+    public Transform select_camLocation;
+    public Transform create_spawnLoaction;
+    public Transform create_camLoaction;
+    public Transform select_spawnLoaction;
 
     // 可选角色类集
     [HideInInspector] public List<Player> playerClasses = new List<Player>(); 
@@ -26,8 +26,8 @@ public class RPGManager : MonoBehaviour
     // 选中的进入游戏地图场景的本地角色
     private GameObject localPlayer;
 
-    public string selectClass;
-    public string selectName;
+    [HideInInspector] public string selectClass;
+    [HideInInspector] public string selectName;
 
     private void Awake()
     {
@@ -46,8 +46,8 @@ public class RPGManager : MonoBehaviour
     public void CreateLocalPlayer(){
         Player player = playerClasses.ToList().Find(p => p.ClassName == selectClass);
         localPlayer =  RPGManager.Instance.CreateItem(player.gameObject);
-        localPlayer.transform.position = role_SpawnLoaction.position;
-        localPlayer.transform.rotation = role_SpawnLoaction.rotation;
+        localPlayer.transform.position = select_spawnLoaction.position;
+        localPlayer.transform.rotation = select_spawnLoaction.rotation;
         localPlayer.GetComponent<CharacterMovement>().enabled = true;
         localPlayer.name = selectName;
         localPlayer.GetComponent<Player>().nickName = selectName;
