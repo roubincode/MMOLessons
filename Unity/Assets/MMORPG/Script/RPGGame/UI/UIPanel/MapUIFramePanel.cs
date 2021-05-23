@@ -5,9 +5,6 @@ using UnityEngine.UI;
 /// </summary>
 public class MapUIFramePanel : BasePanel
 {
-    public Button btn_back;
-    public InputField chat_input;
-    public Text chat_text;
     public Button btn_setting;
 
     public GameObject chatContent;

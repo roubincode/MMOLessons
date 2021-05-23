@@ -753,7 +753,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a2eb5b204733c5549b7f0bbca18f195f, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1398,8 +1398,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4897853266894023065}
-  m_LocalRotation: {x: 0, y: 0.94480205, z: 0, w: 0.32764173}
-  m_LocalPosition: {x: 364.5379, y: 8.98047, z: 448.09247}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 104877247955276438}
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4897853266894023065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1efd7aae72759454c8d9bc029451c981, type: 3}
+  m_Script: {fileID: 11500000, guid: 83abeeb6d2acc804d8c043a9de327779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UnitId: 0
@@ -1480,8 +1480,9 @@ MonoBehaviour:
   _gold: 0
   _state: IDLE
   CharaId: 0
+  nickName: 
   classIcon: {fileID: 0}
-  portraitIcon: {fileID: 21300000, guid: 82820054f599c59459ad32f702781337, type: 3}
+  portraitIcon: {fileID: 0}
 --- !u!114 &4897853266894023066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,7 +1492,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4897853266894023065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc7bba2de7af0444b1bd076532c6fdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e9ed8580e8039845853fd93833497b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRootTransform: {fileID: 0}
@@ -1500,9 +1501,9 @@ MonoBehaviour:
   stepOffset: 0.3
   skinWidth: 0.08
   groundedTestDistance: 0.002
-  center: {x: 0, y: 0.69, z: 0}
+  center: {x: 0, y: 0.75, z: 0}
   radius: 0.3
-  height: 1.25
+  height: 1.5
   collisionLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -1525,7 +1526,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4897853266894023065}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 796b88607f761fb4e8e795fcaa4fed02, type: 3}
+  m_Script: {fileID: 11500000, guid: bb4adf6f58fe2bf4e867d06943ebbadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4897853266894023064}
@@ -1535,11 +1536,11 @@ MonoBehaviour:
   directionDampening: 0.05
   turnDampening: 0.1
   state: 0
-  moveDir: {x: 0, y: 0, z: -0}
+  moveDir: {x: 0, y: 0, z: 0}
   runStepLength: 0.7
   runStepInterval: 3
   runCycleLegOffset: 0.2
-  moveSpeed: 0
+  moveSpeed: 2
   walkSpeed: 2
   sprintSpeed: 7.5
   speedDampTime: 0.1
@@ -1554,12 +1555,12 @@ MonoBehaviour:
     m_Bits: 4294967291
   underwaterThreshold: 0.7
   jumpSpeed: 7
-  jumpLeg: -1
+  jumpLeg: 0
   airborneSteering: 1
   fallMinimumMagnitude: 6
   fallDamageMinimumMagnitude: 13
   fallDamageMultiplier: 2
-  lastFall: {x: -1.8371582, y: -6.7339897, z: 3.3615112}
+  lastFall: {x: 0, y: 0, z: 0}
   minMoveBuffer: 2
   combineMovesAfter: 3
   maxMoveBuffer: 10
@@ -1575,7 +1576,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4897853266894023065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa45812555112548a5d52c3e1a5760f, type: 3}
+  m_Script: {fileID: 11500000, guid: ce2e7af9bebb2ef48affa4fa82b14619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
@@ -2256,7 +2257,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f8596789d5059224aa66c48d77ca28b7, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

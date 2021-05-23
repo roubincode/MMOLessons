@@ -543,7 +543,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 611c2d0561cf82c408fe36814d4b7a19, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -729,7 +729,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c695c183e1a368449b566a0bf974348d, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1160,9 +1160,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6522345643670774535}
   - component: {fileID: 892884920977717629}
-  - component: {fileID: -7392457616637969067}
   - component: {fileID: 8002487056055738002}
   - component: {fileID: -4821798405865259179}
+  - component: {fileID: -7392457616637969067}
   - component: {fileID: -7658779809666418558}
   - component: {fileID: -1080554082733407272}
   - component: {fileID: 1089690718563182303}
@@ -1182,7 +1182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5895166156932676029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 360.40417, y: 8.899469, z: 431.56396}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1388204585892512434}
@@ -1211,31 +1211,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-7392457616637969067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5895166156932676029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1efd7aae72759454c8d9bc029451c981, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UnitId: 0
-  CNName: "\u5973\u6218\u58EB"
-  ClassName: PaladinWoman
-  animator: {fileID: 892884920977717629}
-  collider: {fileID: 8002487056055738002}
-  audioSource: {fileID: -8964367251618778239}
-  movement: {fileID: -1080554082733407272}
-  inbattle: 0
-  _gold: 0
-  _state: IDLE
-  CharaId: 0
-  classIcon: {fileID: 0}
-  portraitIcon: {fileID: 21300000, guid: bf343ea033f224f4ba6f8fcfe6875e1c, type: 3}
 --- !u!136 &8002487056055738002
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1266,6 +1241,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7392457616637969067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895166156932676029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83abeeb6d2acc804d8c043a9de327779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitId: 0
+  CNName: "\u5973\u6218\u58EB"
+  ClassName: PaladinWoman
+  animator: {fileID: 892884920977717629}
+  collider: {fileID: 8002487056055738002}
+  audioSource: {fileID: -8964367251618778239}
+  movement: {fileID: -1080554082733407272}
+  inbattle: 0
+  _gold: 0
+  _state: IDLE
+  CharaId: 0
+  nickName: 
+  classIcon: {fileID: 0}
+  portraitIcon: {fileID: 0}
 --- !u!114 &-7658779809666418558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,7 +1276,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5895166156932676029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc7bba2de7af0444b1bd076532c6fdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e9ed8580e8039845853fd93833497b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRootTransform: {fileID: 0}
@@ -1286,7 +1287,7 @@ MonoBehaviour:
   groundedTestDistance: 0.002
   center: {x: 0, y: 0.86, z: 0}
   radius: 0.3
-  height: 1.58
+  height: 1.7
   collisionLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -1309,7 +1310,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5895166156932676029}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 796b88607f761fb4e8e795fcaa4fed02, type: 3}
+  m_Script: {fileID: 11500000, guid: bb4adf6f58fe2bf4e867d06943ebbadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: -7392457616637969067}
@@ -1359,7 +1360,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5895166156932676029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa45812555112548a5d52c3e1a5760f, type: 3}
+  m_Script: {fileID: 11500000, guid: ce2e7af9bebb2ef48affa4fa82b14619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
@@ -1880,7 +1881,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d28bc52ce8fff384a875c87b731d06cf, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

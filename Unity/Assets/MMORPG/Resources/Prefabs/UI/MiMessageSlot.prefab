@@ -55,7 +55,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5205475771118431237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f89385a144c96498ab94fd20112f8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2608fbf776e4a7d40b05bce0e51d4082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 6393007119410853164}
@@ -64,7 +64,7 @@ MonoBehaviour:
     identifier: 
     message: 
     textPrefab: {fileID: 0}
-  mouseOverStyle: 2
+  mouseOverStyle: 0
 --- !u!114 &6393007119410853164
 MonoBehaviour:
   m_ObjectHideFlags: 0

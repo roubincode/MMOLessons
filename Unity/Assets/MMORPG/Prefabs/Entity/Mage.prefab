@@ -529,7 +529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121082584879797669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 359.2407, y: 8.899469, z: 431.12485}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6909554866693500586}
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121082584879797669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1efd7aae72759454c8d9bc029451c981, type: 3}
+  m_Script: {fileID: 11500000, guid: 83abeeb6d2acc804d8c043a9de327779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UnitId: 0
@@ -610,8 +610,9 @@ MonoBehaviour:
   _gold: 0
   _state: IDLE
   CharaId: 0
+  nickName: 
   classIcon: {fileID: 0}
-  portraitIcon: {fileID: 21300000, guid: 45398acbfd407a14cb7992a5945b6f6b, type: 3}
+  portraitIcon: {fileID: 0}
 --- !u!114 &-4182161343836428129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +622,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121082584879797669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc7bba2de7af0444b1bd076532c6fdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e9ed8580e8039845853fd93833497b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRootTransform: {fileID: 0}
@@ -630,9 +631,9 @@ MonoBehaviour:
   stepOffset: 0.3
   skinWidth: 0.08
   groundedTestDistance: 0.002
-  center: {x: 0, y: 0.82, z: 0}
+  center: {x: 0, y: 0.81, z: 0}
   radius: 0.3
-  height: 1.5
+  height: 1.65
   collisionLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -655,7 +656,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121082584879797669}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 796b88607f761fb4e8e795fcaa4fed02, type: 3}
+  m_Script: {fileID: 11500000, guid: bb4adf6f58fe2bf4e867d06943ebbadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: -5884023350808304235}
@@ -705,7 +706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121082584879797669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efa45812555112548a5d52c3e1a5760f, type: 3}
+  m_Script: {fileID: 11500000, guid: ce2e7af9bebb2ef48affa4fa82b14619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
@@ -1445,7 +1446,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4f29c83d8d2693648bb2642139dde638, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3288,7 +3289,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85a9b21b69916494fac943c27c2b1486, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
