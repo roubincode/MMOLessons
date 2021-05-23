@@ -14,10 +14,10 @@ namespace MMOGame
             return prefab;
         }
 
-        public static UnityEngine.Object[] GetAll(string asName)
+        public static UnityEngine.Object[] GetAll()
         {
 	        ResourcesComponent resourcesComponent = Game.Scene.GetComponent<ResourcesComponent>();
-            GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset(asName+".unity3d", "Unit");
+            GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset("unit.unity3d", "Unit");
 
 	        UnityEngine.Object[] prefabs = bundleGameObject.GetAll<GameObject>();
             return prefabs;

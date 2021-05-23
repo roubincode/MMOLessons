@@ -54,7 +54,7 @@ public class SelectRolePanel : BasePanel
         GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 0.0f);
         GetComponent<RectTransform>().offsetMax = new Vector2(0.0f, 0.0f);
         base.EnterPanel();
-        RPGManager.Instance.CamLocation(RPGManager.Instance.selectRole_CamLocation);
+        RPGManager.Instance.CamLocation(RPGManager.Instance.select_camLocation);
 
         // 动态生成内容不放在Start方法中，要放在EnterPanel方法中
         players = RPGManager.Instance.playerList.ToArray();
@@ -72,7 +72,7 @@ public class SelectRolePanel : BasePanel
     }
 
     void InitListView(){
-        Vector3 sp = RPGManager.Instance.role_SpawnLoaction.position;
+        Vector3 sp = RPGManager.Instance.select_spawnLoaction.position;
         if(players.Length>0){
             
             // 生成创建角色列表
@@ -81,7 +81,7 @@ public class SelectRolePanel : BasePanel
                 GameObject preGo =  RPGManager.Instance.CreateItem(player.gameObject);
                 preGo.transform.parent = viewRoot;
                 preGo.transform.position = sp+=Vector3.left*1.2f;
-                preGo.transform.rotation = RPGManager.Instance.role_SpawnLoaction.rotation;
+                preGo.transform.rotation = RPGManager.Instance.select_spawnLoaction.rotation;
                 preGo.GetComponent<CharacterMovement>().enabled = false;
                 preGo.name = nicks[i];
                 preGo.GetComponent<Player>().nickName = nicks[i];

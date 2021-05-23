@@ -66,7 +66,7 @@ public class CreateRolePanel : BasePanel
         uiTab.action = PreviewRole;
         uiTab.RefreshTab();
         // 默认预览职业与预览相机位置
-        RPGManager.Instance.CamLocation(RPGManager.Instance.role_PreviewCamLoaction);
+        RPGManager.Instance.CamLocation(RPGManager.Instance.create_camLoaction);
         PreviewRole(classes[0].ClassName);
     }
 
@@ -95,8 +95,8 @@ public class CreateRolePanel : BasePanel
             // 缓存职业角色
             GameObject preGo =  RPGManager.Instance.CreateItem(player.gameObject);
             preGo.transform.parent = viewRoot;
-            preGo.transform.position = RPGManager.Instance.role_PreviewLoaction.position;
-            preGo.transform.rotation = RPGManager.Instance.role_PreviewLoaction.rotation;
+            preGo.transform.position = RPGManager.Instance.create_spawnLoaction.position;
+            preGo.transform.rotation = RPGManager.Instance.create_spawnLoaction.rotation;
             preGo.GetComponent<CharacterMovement>().enabled = false;
             preGo.name = player.ClassName;
             preGo.SetActive(false);

@@ -241,6 +241,9 @@
     <Reference Include="UnityEditor.Android.Extensions">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>D:/data/github/MMOLessons/Unity/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
         <HintPath>D:/Program Files/Unity/2019.4.1/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>
@@ -601,19 +604,28 @@
     <Reference Include="UnityEngine.UI">
         <HintPath>D:/data/github/MMOLessons/Unity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+        <HintPath>D:/data/github/MMOLessons/Unity/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+        <HintPath>D:/data/github/MMOLessons/Unity/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.ETCore.csproj">
       <Project>{a6ca2a50-5dca-8390-0b0c-0386cf76ae47}</Project>
       <Name>Unity.ETCore</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.ThirdParty.csproj">
       <Project>{d2ad5be1-263a-9a30-ab0f-dc5b08044350}</Project>
       <Name>Unity.ThirdParty</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Model.csproj">
       <Project>{9498bfb4-d9f5-c441-13e3-3f26f7700e29}</Project>
       <Name>Unity.Model</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

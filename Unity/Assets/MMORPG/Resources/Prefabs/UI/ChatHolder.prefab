@@ -187,7 +187,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6047747588912324661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e96c87090b83b84f935b41699d1dc56, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ce58da09d094d842b91f3edf30dac05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 9013508364304976657}
@@ -1414,31 +1414,31 @@ MonoBehaviour:
     command: /g
     identifierOut: 
     identifierIn: "[\u4E16\u754C]"
-    textPrefab: {fileID: 5205475771118431237, guid: f293208ee59166d41a4d2d4b19657273,
+    textPrefab: {fileID: 5205475771118431237, guid: 3d41bc2fe9498ae43bb2741d9a61a24c,
       type: 3}
     textColor: {r: 0.8980392, g: 0.6666667, b: 0.4, a: 1}
   miChannel:
     command: /m
     identifierOut: 
     identifierIn: "[\u79C1\u804A]"
-    textPrefab: {fileID: 5205475771118431237, guid: 04b5a734a316ab14083ea7478eea1a81,
+    textPrefab: {fileID: 5205475771118431237, guid: b6b3f857f3cf90340a6aba04370a14a9,
       type: 3}
     textColor: {r: 0.90588236, g: 0.49019608, b: 0.89411765, a: 1}
   teamChannel:
     command: /t
     identifierOut: 
     identifierIn: "[\u961F\u4F0D]"
-    textPrefab: {fileID: 5205475771118431237, guid: 3780cf67237335145bf54dabd9d53d38,
+    textPrefab: {fileID: 5205475771118431237, guid: c89ba3a13a76d8c49bddfeb843ccb778,
       type: 3}
     textColor: {r: 0.36862746, g: 0.78039217, b: 0.8980392, a: 1}
   partyChannel:
     command: /p
     identifierOut: 
     identifierIn: "[\u516C\u4F1A]"
-    textPrefab: {fileID: 5205475771118431237, guid: 51183da8dd3684740af7379e5678b5b8,
+    textPrefab: {fileID: 5205475771118431237, guid: a888f56c17e9bae41b4180173710223e,
       type: 3}
     textColor: {r: 0.34509805, g: 0.9529412, b: 0.4117647, a: 1}
-  tab: {fileID: 3437266875335675447}
+  tab: {fileID: 0}
   localChannel:
     command: 
     identifierOut: 
@@ -1456,7 +1456,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6047747588912324661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d6d3ad0749c4954fb8640beb639d8b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 176bd1a2f20c29c4ea9577d91e171998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tab: {fileID: 3437266875335675447}
@@ -1531,7 +1531,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -2040,7 +2040,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -2170,8 +2170,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9013508364304976657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94eb1b7920d9b1d41bb1e63dc2a22004, type: 3}
+  m_Script: {fileID: 11500000, guid: 84c86c120f1d68d4fb7bbc42b65eb306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 6095094598461559584}
-  highlightColor: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 0.72156864}
+  image: {fileID: 6047747588912324663}
+  highlightColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 0.7372549}
