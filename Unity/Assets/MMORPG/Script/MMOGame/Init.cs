@@ -6,7 +6,7 @@ using Mirror;
 namespace MMOGame{
 	public class Init : MonoBehaviour
 	{
-		public void Start()
+		public void Awake()
         {
 			Time.fixedDeltaTime = 1f / 60;
 			
@@ -45,7 +45,7 @@ namespace MMOGame{
 				Game.Scene.GetComponent<ResourcesComponent>().UnloadBundle("config.unity3d");
 
 				// 加载角色unit资源
-				Game.Scene.GetComponent<ResourcesComponent>().LoadBundle("unit.unity3d");
+				// Game.Scene.GetComponent<ResourcesComponent>().LoadBundle("unit.unity3d");
 
 				// 网络层调用游戏层，只需要获取到对象就能调用
 				// RPGManager.Instance.playerClasses = MMOManager.Instance.FindPlayerClasses();
