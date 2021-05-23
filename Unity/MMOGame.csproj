@@ -601,22 +601,18 @@
     <ProjectReference Include="RPGGame.csproj">
       <Project>{7eb7d28d-2154-c100-931f-3f6c8daa62f2}</Project>
       <Name>RPGGame</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.ETCore.csproj">
       <Project>{a6ca2a50-5dca-8390-0b0c-0386cf76ae47}</Project>
       <Name>Unity.ETCore</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Model.csproj">
       <Project>{9498bfb4-d9f5-c441-13e3-3f26f7700e29}</Project>
       <Name>Unity.Model</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.ThirdParty.csproj">
       <Project>{d2ad5be1-263a-9a30-ab0f-dc5b08044350}</Project>
       <Name>Unity.ThirdParty</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
