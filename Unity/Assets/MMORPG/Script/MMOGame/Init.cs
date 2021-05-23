@@ -6,7 +6,7 @@ using Mirror;
 namespace MMOGame{
 	public class Init : MonoBehaviour
 	{
-		public void Start()
+		public void Awake()
         {
 			Time.fixedDeltaTime = 1f / 60;
 			
