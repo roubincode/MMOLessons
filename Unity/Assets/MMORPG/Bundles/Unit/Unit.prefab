@@ -45,14 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - key: Barbarian
-    gameObject: {fileID: 7460566571953217099, guid: 74de8d760fcd005418e63f909e212f7c,
-      type: 3}
+    gameObject: {fileID: 0}
   - key: Mage
-    gameObject: {fileID: 2121082584879797669, guid: 660ab2df304c85942a3c9c1eabba71fb,
-      type: 3}
+    gameObject: {fileID: 0}
   - key: PaladinWoman
-    gameObject: {fileID: 5895166156932676029, guid: e7bf5b4fcf7e8af4cbca5b3bdaeeb027,
-      type: 3}
+    gameObject: {fileID: 0}
   - key: SkeletonWarrior
-    gameObject: {fileID: 4897853266894023065, guid: f31d932ecd619db49ac3a1f32dbd850d,
-      type: 3}
+    gameObject: {fileID: 0}
