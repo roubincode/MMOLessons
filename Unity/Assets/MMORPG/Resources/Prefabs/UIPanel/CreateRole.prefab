@@ -774,6 +774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7508223603349190968}
   - component: {fileID: 7508223603349190974}
+  - component: {fileID: 3345319113412066249}
   m_Layer: 5
   m_Name: CreateRole
   m_TagString: Untagged
@@ -812,6 +813,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7508223603349190971}
   m_CullTransparentMesh: 0
+--- !u!114 &3345319113412066249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508223603349190971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b8d1d0cc6cf6d4aa8a01219f4f37ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uIState: {fileID: 0}
 --- !u!1 &8144144830913965372
 GameObject:
   m_ObjectHideFlags: 0
