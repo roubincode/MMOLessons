@@ -826,6 +826,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uIState: {fileID: 0}
+  btn_back: {fileID: 1631654919515768699}
+  btn_submit: {fileID: 8330289041352314996}
 --- !u!1 &8144144830913965372
 GameObject:
   m_ObjectHideFlags: 0

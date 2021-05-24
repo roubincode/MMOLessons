@@ -10,7 +10,7 @@ public class UIState : MonoBehaviour
     public UIPanel createRole;
     public UIPanel mapUIFrame;
     public UIPanel setting;
-     
+
     void Start()
     {
         // 插曲练习：比如 123123123 这样一个整数，如何把其中每一位数字作为一个元素放到一个数组中。
@@ -29,6 +29,32 @@ public class UIState : MonoBehaviour
         //     Debug.Log(item);
         // }
         
+    }
+
+    public void EnterSelectRolePanel(){
+        selectRole.EnterPanel();
+    }
+
+    public void EnterCreateRolePanel(){
+        createRole.EnterPanel();
+    }
+
+    public void EnterRegisterPanel(){
+        register.EnterPanel();
+    }
+    public void EnterSettingPanel(){
+        setting.EnterPanel();
+    }
+
+    public void EnterLoginPanel(){
+        login.EnterPanel();
+    }
+
+    public void EnterMapUIFramePanel(){
+        mapUIFrame.EnterPanel();
+    }
+    public void ExitMapUIFramePanel(){
+        mapUIFrame.ExitPanel();
     }
 
     public static char[] getChar(string s){

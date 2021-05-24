@@ -5322,6 +5322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uIState: {fileID: 0}
+  btn_setting: {fileID: 7733447910253734696}
 --- !u!1001 &747979864030522618
 PrefabInstance:
   m_ObjectHideFlags: 0

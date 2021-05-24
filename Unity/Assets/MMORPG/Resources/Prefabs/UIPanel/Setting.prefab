@@ -1105,7 +1105,7 @@ GameObject:
   - component: {fileID: 2076358716985489814}
   - component: {fileID: 4200293291228653719}
   m_Layer: 5
-  m_Name: BtnLogout
+  m_Name: BtnSelectRole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1660,3 +1660,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uIState: {fileID: 0}
+  btn_back: {fileID: 760536732053787339}
+  btn_backSelectRole: {fileID: 4200293291228653719}

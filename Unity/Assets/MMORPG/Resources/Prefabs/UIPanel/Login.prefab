@@ -1200,3 +1200,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uIState: {fileID: 0}
+  btn_submit: {fileID: 3376840405555568120}
+  btn_register: {fileID: 3376840406389690748}
