@@ -13,6 +13,7 @@ public class CreateRolePanel : UIPanel
     public UIRoleClassSlot slotPrefab;
     private UIRoleClassSlot defaultSlot;
     public InputField inputName;
+    public Text info;
 
     private GameObject preGo;
     private string preName;
@@ -109,5 +110,6 @@ public class CreateRolePanel : UIPanel
         preGo = viewRoot.Find(className).gameObject;
         preName = className;
         preGo.SetActive(true);
+        info.text = preGo.GetComponent<Player>().toolTip;
     }
 }

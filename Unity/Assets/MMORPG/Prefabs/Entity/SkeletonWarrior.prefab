@@ -2109,7 +2109,7 @@ Transform:
   m_GameObject: {fileID: 7701969063848976339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 2913502245235811548}
   - {fileID: 472422649091885929}
@@ -2161,6 +2161,8 @@ MonoBehaviour:
   nickName: 
   classIcon: {fileID: 0}
   portraitIcon: {fileID: 21300000, guid: 82820054f599c59459ad32f702781337, type: 3}
+  toolTip: "\u9AB7\u9AC5\u6218\u58EB\u662F\u4EA1\u7075\u4E16\u754C\u6700\u53EF\u6015\u7684\u9AD8\u7206\u53D1\u6597\u58EB\uFF0C\u80FD\u77AC\u95F4\u4EA7\u751F\u5927\u91CF\u7269\u7406\u4F24\u5BB3\uFF0C\u4F46\u9632\u5FA1\u6781\u4F4E\uFF0C\u6B7B\u4EA1\u540E\u77ED\u6682\u7B49\u5F85\u540E\u53EF\u590D\u751F\u3002
+    \u7531\u4EA1\u7075\u65CF\u5DEB\u5E08\u53EC\u5524\u51FA\u7684\u5355\u4F4D\uFF0C\u5355\u5175\u6218\u6597\u529B\u6781\u5F3A\uFF0C\u53EF\u4EE5\u83B7\u5F97\u90AA\u6076\u529B\u91CF\u3001\u90AA\u6076\u88C5\u7532\u3001\u9AA8\u8D28\u589E\u5F3A\u672F\u7684\u5347\u7EA7\uFF0C\u6709\u6218\u672F\u9AB7\u9AC5\u6D77\u3002"
 --- !u!114 &3317107248307051524
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -22,14 +22,15 @@ public partial class Player : Entity
     /// </summary>
     public static Player localPlayer;
 
+    [SerializeField, TextArea(1, 30)] public string toolTip; 
+
     GameObject _nextTarget;
     public Entity nextTarget
     {
         get { return _nextTarget != null  ? _nextTarget.GetComponent<Entity>() : null; }
         set { _nextTarget = value != null ? value.gameObject : null; }
     }
-
-
+    
     void Start()
     {
         // 暂时就一个角色放在场景里，localPlayer就是当前对象
@@ -39,11 +40,6 @@ public partial class Player : Entity
         foreach(AnimatorControllerParameter p in ani.parameters){
            // Debug.Log(p.name);
         }
-        
-    }
-
-    void LateUpdate()
-    {
         
     }
     

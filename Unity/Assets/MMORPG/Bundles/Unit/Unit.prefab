@@ -44,9 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-  - key: Barbarian
-    gameObject: {fileID: 6515859526209149746, guid: fe6459514e25b5e49807b4ba9af8ff01,
-      type: 3}
   - key: Mage
     gameObject: {fileID: 8025812999803196927, guid: bb13e2b6312b3d242af712ee71b6dab3,
       type: 3}
@@ -55,4 +52,13 @@ MonoBehaviour:
       type: 3}
   - key: SkeletonWarrior
     gameObject: {fileID: 7701969063848976339, guid: 6292cdb26c234ca429ffdced06e4749b,
+      type: 3}
+  - key: Warrior
+    gameObject: {fileID: 8617687279122785014, guid: cf90d5a3488c1cf42870f508a2072fb0,
+      type: 3}
+  - key: GoblinArcher
+    gameObject: {fileID: 6776190795342420940, guid: 2eea001d118dc5e4999b9743ac182b84,
+      type: 3}
+  - key: Barbarian
+    gameObject: {fileID: 6515859526209149746, guid: fe6459514e25b5e49807b4ba9af8ff01,
       type: 3}
