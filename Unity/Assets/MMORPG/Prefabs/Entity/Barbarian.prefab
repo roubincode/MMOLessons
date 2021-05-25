@@ -2362,7 +2362,7 @@ MonoBehaviour:
   CharaId: 0
   nickName: 
   classIcon: {fileID: 0}
-  portraitIcon: {fileID: 0}
+  portraitIcon: {fileID: 21300000, guid: 15fc1d5a369628c419bba86a4630a661, type: 3}
 --- !u!114 &-7834896238953445862
 MonoBehaviour:
   m_ObjectHideFlags: 0
