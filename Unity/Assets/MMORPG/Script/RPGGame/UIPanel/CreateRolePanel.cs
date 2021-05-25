@@ -91,7 +91,7 @@ public class CreateRolePanel : UIPanel
             preGo.transform.parent = viewRoot;
             preGo.transform.position = RPGManager.Instance.create_spawnLoaction.position;
             preGo.transform.rotation = RPGManager.Instance.create_spawnLoaction.rotation;
-            //preGo.GetComponent<CharacterMovement>().enabled = false;
+            
             preGo.name = player.ClassName;
             preGo.SetActive(false);
         }

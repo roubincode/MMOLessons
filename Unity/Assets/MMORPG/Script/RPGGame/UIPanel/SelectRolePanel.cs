@@ -71,7 +71,7 @@ public class SelectRolePanel : UIPanel
                 preGo.transform.parent = viewRoot;
                 preGo.transform.position = sp+=Vector3.left*1.2f;
                 preGo.transform.rotation = RPGManager.Instance.select_spawnLoaction.rotation;
-                //preGo.GetComponent<CharacterMovement>().enabled = false;
+                
                 preGo.name = nicks[i];
                 preGo.GetComponent<Player>().nickName = nicks[i];
             }

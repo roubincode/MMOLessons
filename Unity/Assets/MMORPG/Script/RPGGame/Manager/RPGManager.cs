@@ -53,16 +53,11 @@ public class RPGManager : MonoBehaviour
         localPlayer.transform.rotation = select_spawnLoaction.rotation;
         localPlayer.name = selectName;
         localPlayer.GetComponent<Player>().nickName = selectName;
-        //localPlayer.GetComponent<CharacterMovement>().enabled = true;
-        // CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
-        // cameraMMO.enabled = true;
-        // cameraMMO.target = localPlayer.transform;
+        
     }
 
     public void ClearLoaclPlayer(){
-        // CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
-        // cameraMMO.enabled = false;
-        // cameraMMO.target = null;
+        
         if(localPlayer!=null) Destroy(localPlayer);
     }
 
