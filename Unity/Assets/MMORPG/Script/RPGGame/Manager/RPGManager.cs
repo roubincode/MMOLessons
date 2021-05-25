@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 using Mirror;
 /// <summary>
 /// 游戏总管理,负责管理其他所有的管理者
@@ -9,9 +10,13 @@ public class RPGManager : MonoBehaviour
     public static RPGManager Instance { get; private set; } // RPGManager单例
     public static IMMOManager MMOMgr;
     public Transform select_camLocation;
+    public Transform select_spawnLoaction;
     public Transform create_spawnLoaction;
     public Transform create_camLoaction;
-    public Transform select_spawnLoaction;
+    
+    [HideInInspector] public string selectClass;
+    [HideInInspector] public string selectName;
+    [HideInInspector] public List<string> playerNicks = new List<string>();
 
     // 可选角色类集
     [HideInInspector] public List<Player> playerClasses = new List<Player>(); 
@@ -36,10 +41,42 @@ public class RPGManager : MonoBehaviour
         }
     }
 
+    public void CamLocation(Transform location){
+        Camera.main.transform.position = location.position;
+        Camera.main.transform.rotation = location.rotation;
+    }
+
+    public void CreateLocalPlayer(){
+        Player player = playerClasses.ToList().Find(p => p.ClassName == selectClass);
+        localPlayer =  RPGManager.Instance.CreateItem(player.gameObject);
+        localPlayer.transform.position = select_spawnLoaction.position;
+        localPlayer.transform.rotation = select_spawnLoaction.rotation;
+        localPlayer.name = selectName;
+        localPlayer.GetComponent<Player>().nickName = selectName;
+        //localPlayer.GetComponent<CharacterMovement>().enabled = true;
+        // CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
+        // cameraMMO.enabled = true;
+        // cameraMMO.target = localPlayer.transform;
+    }
+
+    public void ClearLoaclPlayer(){
+        // CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
+        // cameraMMO.enabled = false;
+        // cameraMMO.target = null;
+        if(localPlayer!=null) Destroy(localPlayer);
+    }
+
     public void ClearPlayerList(){
         playerList.Clear();
     }
 
+    public void NoneSelectd(){
+        foreach(Player player in playerList){
+            selectClass = "";
+            player.GetComponent<SelectableCharacter>().selected = false;
+        }  
+    }
+    
     // 实例化游戏物体的方法
     public GameObject CreateItem(GameObject prefab)
     {

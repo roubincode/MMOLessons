@@ -1751,6 +1751,7 @@ GameObject:
   - component: {fileID: 8578825469752614869}
   - component: {fileID: 2444945091862742447}
   - component: {fileID: 751118595611850981}
+  - component: {fileID: 5906731451483784852}
   m_Layer: 0
   m_Name: PaladinWoman
   m_TagString: Untagged
@@ -1820,3 +1821,16 @@ MonoBehaviour:
   nickName: 
   classIcon: {fileID: 0}
   portraitIcon: {fileID: 0}
+--- !u!114 &5906731451483784852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8954788711306741103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2e7af9bebb2ef48affa4fa82b14619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: 0

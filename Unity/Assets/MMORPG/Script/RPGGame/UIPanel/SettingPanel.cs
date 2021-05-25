@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class CreateRolePanel : UIPanel
+public class SettingPanel : UIPanel
 {
     public Button btn_back; 
-    public Button btn_submit;
+    public Button btn_backSelectRole;
 
     void Start()
     {
         btn_back.onClick.SetListener(() => {
             ExitPanel();
-            uIState.EnterSelectRolePanel();
         });
-        btn_submit.onClick.SetListener(() => {
+        btn_backSelectRole.onClick.SetListener(() => {
             ExitPanel();
+            RPGManager.Instance.ClearLoaclPlayer();
+            uIState.ExitMapUIFramePanel();
             uIState.EnterSelectRolePanel();
         });
     }

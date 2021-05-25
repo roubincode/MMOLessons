@@ -775,6 +775,7 @@ GameObject:
   - component: {fileID: 7508223603349190968}
   - component: {fileID: 7508223603349190974}
   - component: {fileID: 3345319113412066249}
+  - component: {fileID: 8150601931083879289}
   m_Layer: 5
   m_Name: CreateRole
   m_TagString: Untagged
@@ -822,12 +823,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 7508223603349190971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65b8d1d0cc6cf6d4aa8a01219f4f37ee, type: 3}
+  m_Script: {fileID: 11500000, guid: e00ae3be3abd2a04f80c3835692cd34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   uIState: {fileID: 0}
   btn_back: {fileID: 1631654919515768699}
   btn_submit: {fileID: 8330289041352314996}
+  content: {fileID: 3086486126343912377}
+  slotPrefab: {fileID: 4329192690054250913, guid: e01fa347ee2317841880144841867384,
+    type: 3}
+  inputName: {fileID: 3214120514423069922}
+--- !u!114 &8150601931083879289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508223603349190971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4b09964aa37a5438744d38abab7ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tab: {fileID: 3086486126343912377}
+  downSprite: {fileID: 0}
+  normalSprite: {fileID: 0}
+  downColor: {r: 0.7830189, g: 0.49288696, b: 0.3508811, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &8144144830913965372
 GameObject:
   m_ObjectHideFlags: 0

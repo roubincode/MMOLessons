@@ -5,11 +5,11 @@ using UnityEngine;
 public class UIPanel : MonoBehaviour
 {
     public UIState uIState;
-    public void ExitPanel(){
+    public virtual void ExitPanel(){
         gameObject.SetActive(false);
     }
 
-    public void EnterPanel(){
+    public virtual void EnterPanel(){
         gameObject.SetActive(true);
     }
 }
