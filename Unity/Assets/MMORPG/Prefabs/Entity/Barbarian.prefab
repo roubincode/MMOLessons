@@ -2386,11 +2386,11 @@ MonoBehaviour:
   rootTransformOffset: {x: 0, y: 0, z: 0}
   slopeLimit: 45
   stepOffset: 0.4
-  skinWidth: 0.08
+  skinWidth: 0.025
   groundedTestDistance: 0.002
-  center: {x: 0, y: 0.85, z: 0}
+  center: {x: 0, y: 0.875, z: 0}
   radius: 0.3
-  height: 1.8
+  height: 1.7
   collisionLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -2411,7 +2411,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6515859526209149746}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb4adf6f58fe2bf4e867d06943ebbadf, type: 3}
   m_Name: 
@@ -2478,9 +2478,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.4
-  m_Height: 1.8
+  m_Height: 1.7
   m_Direction: 1
-  m_Center: {x: 0, y: 0.85, z: 0}
+  m_Center: {x: 0, y: 0.84, z: 0}
 --- !u!54 &-1901928516437961863
 Rigidbody:
   m_ObjectHideFlags: 0
