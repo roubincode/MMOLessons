@@ -187,7 +187,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -1326,7 +1326,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6047747588912324660}
   - component: {fileID: 6047747588912324662}
-  - component: {fileID: 6047747588912324663}
+  - component: {fileID: 1964805605399150474}
+  - component: {fileID: 6598494013224598567}
   m_Layer: 5
   m_Name: ChatHolder
   m_TagString: Untagged
@@ -1362,7 +1363,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6047747588912324661}
   m_CullTransparentMesh: 0
---- !u!114 &6047747588912324663
+--- !u!114 &1964805605399150474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1371,26 +1372,68 @@ MonoBehaviour:
   m_GameObject: {fileID: 6047747588912324661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 87b3de84037c79e45baca27fe9997a33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5803922}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5eeadcfd2471c94ba84dd71928f343a, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  panel: {fileID: 9013508364304976657}
+  messageInput: {fileID: 6047747588482702125}
+  sendButton: {fileID: 0}
+  content: {fileID: 6047747589796924397}
+  scrollRect: {fileID: 6047747587983330315}
+  worldChannel:
+    command: /g
+    identifierOut: 
+    identifierIn: "[\u4E16\u754C]"
+    textPrefab: {fileID: 5205475771118431237, guid: 3d41bc2fe9498ae43bb2741d9a61a24c,
+      type: 3}
+    textColor: {r: 0.8980392, g: 0.6666667, b: 0.4, a: 1}
+  miChannel:
+    command: /m
+    identifierOut: 
+    identifierIn: "[\u79C1\u804A]"
+    textPrefab: {fileID: 5205475771118431237, guid: b6b3f857f3cf90340a6aba04370a14a9,
+      type: 3}
+    textColor: {r: 0.90588236, g: 0.49019608, b: 0.89411765, a: 1}
+  teamChannel:
+    command: /t
+    identifierOut: 
+    identifierIn: "[\u961F\u4F0D]"
+    textPrefab: {fileID: 5205475771118431237, guid: c89ba3a13a76d8c49bddfeb843ccb778,
+      type: 3}
+    textColor: {r: 0.36862746, g: 0.78039217, b: 0.8980392, a: 1}
+  partyChannel:
+    command: /p
+    identifierOut: 
+    identifierIn: "[\u516C\u4F1A]"
+    textPrefab: {fileID: 5205475771118431237, guid: a888f56c17e9bae41b4180173710223e,
+      type: 3}
+    textColor: {r: 0.34509805, g: 0.9529412, b: 0.4117647, a: 1}
+  tab: {fileID: 0}
+  localChannel:
+    command: 
+    identifierOut: 
+    identifierIn: 
+    textPrefab: {fileID: 0}
+    textColor: {r: 0, g: 0, b: 0, a: 0}
+  activationKeys: 0d0000000f010000
+  keepHistory: 100
+--- !u!114 &6598494013224598567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047747588912324661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4b09964aa37a5438744d38abab7ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tab: {fileID: 3437266875335675447}
+  downSprite: {fileID: 21300000, guid: 7e77a24d350ba6641a2c7d5e033fa10c, type: 3}
+  normalSprite: {fileID: 21300000, guid: f233feeb1eabdb542adc42b01a696cd8, type: 3}
+  downColor: {r: 0, g: 0, b: 0, a: 0}
+  normalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &6047747588947637408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +1501,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -1967,7 +2010,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0348d2dbfd8f8f9459872fd6891955ad, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -2020,7 +2063,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6648094382455251783}
   - component: {fileID: 802905329668177667}
-  - component: {fileID: 6095094598461559584}
+  - component: {fileID: 1991702471256845072}
+  - component: {fileID: 8912912580914261421}
   m_Layer: 5
   m_Name: ChatPanel
   m_TagString: Untagged
@@ -2058,7 +2102,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9013508364304976657}
   m_CullTransparentMesh: 0
---- !u!114 &6095094598461559584
+--- !u!114 &1991702471256845072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9013508364304976657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368d92c53cdcd5540a03c3119de18d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 8912912580914261421}
+  highlightColor: {r: 0.32941177, g: 0.32941177, b: 0.32941177, a: 0.7529412}
+--- !u!114 &8912912580914261421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2071,15 +2129,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5803922}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: b5eeadcfd2471c94ba84dd71928f343a, type: 3}
   m_Type: 1
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
