@@ -10,6 +10,7 @@ public class CreateRolePanel : BasePanel
     public Button btn_Submit;
     public Button btn_back;
     public Transform content;
+    public Text info;
     public UIRoleClassSlot slotPrefab;
     public InputField inputName;
     private Transform viewRoot;
@@ -51,6 +52,7 @@ public class CreateRolePanel : BasePanel
         if(preGo!=null) preGo.SetActive(false);
         preGo = viewRoot.Find(className).gameObject;
         preName = className;
+        info.text = preGo.GetComponent<Player>().toolTip;
         preGo.SetActive(true);
     }
 
@@ -97,7 +99,8 @@ public class CreateRolePanel : BasePanel
             preGo.transform.parent = viewRoot;
             preGo.transform.position = RPGManager.Instance.create_spawnLoaction.position;
             preGo.transform.rotation = RPGManager.Instance.create_spawnLoaction.rotation;
-            preGo.GetComponent<CharacterMovement>().enabled = false;
+            CharacterMovement movement = preGo.GetComponent<CharacterMovement>();
+            if(movement!=null)movement.enabled = false;
             preGo.name = player.ClassName;
             preGo.SetActive(false);
         }

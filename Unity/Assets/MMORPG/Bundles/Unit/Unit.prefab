@@ -45,14 +45,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - key: Barbarian
-    gameObject: {fileID: 5817949915454623709, guid: 74de8d760fcd005418e63f909e212f7c,
+    gameObject: {fileID: 6515859526209149746, guid: fe6459514e25b5e49807b4ba9af8ff01,
+      type: 3}
+  - key: GoblinArcher
+    gameObject: {fileID: 5412984697602160155, guid: faaa85d3e91f1fc4396c9d6f47ec6727,
       type: 3}
   - key: Mage
-    gameObject: {fileID: 5708444045273603589, guid: 660ab2df304c85942a3c9c1eabba71fb,
+    gameObject: {fileID: 8025812999803196927, guid: bb13e2b6312b3d242af712ee71b6dab3,
       type: 3}
   - key: PaladinWoman
-    gameObject: {fileID: 3834406461009178225, guid: e7bf5b4fcf7e8af4cbca5b3bdaeeb027,
+    gameObject: {fileID: 8954788711306741103, guid: 56b845cf6b9aaed4a94dba336042a683,
       type: 3}
   - key: SkeletonWarrior
-    gameObject: {fileID: 1912710469001822044, guid: f31d932ecd619db49ac3a1f32dbd850d,
+    gameObject: {fileID: 7701969063848976339, guid: 6292cdb26c234ca429ffdced06e4749b,
+      type: 3}
+  - key: Warrior
+    gameObject: {fileID: 8617687279122785014, guid: cf90d5a3488c1cf42870f508a2072fb0,
       type: 3}
