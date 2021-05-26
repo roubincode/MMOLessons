@@ -42359,6 +42359,7 @@ GameObject:
   - component: {fileID: 1227195653}
   - component: {fileID: 1227195652}
   - component: {fileID: 1227195658}
+  - component: {fileID: 1227195654}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -42382,6 +42383,32 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227195651}
   m_Enabled: 1
+--- !u!114 &1227195654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227195651}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 194ced40a38ff5f49b669a112412fce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  mouseButton: 1
+  distance: 5
+  minDistance: 3
+  maxDistance: 20
+  zoomSpeedMouse: 1
+  zoomSpeedTouch: 0.2
+  rotationSpeed: 2
+  xMinAngle: -40
+  xMaxAngle: 80
+  offset: {x: 0, y: 1.5, z: 0}
+  viewBlockingLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!20 &1227195655
 Camera:
   m_ObjectHideFlags: 0

@@ -182,7 +182,7 @@ BlendTree:
   m_Name: Locomotion
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -3520395127075476257, guid: 8256d086cbb5ad34ab2dcf46d284134b,
+    m_Motion: {fileID: -3520395127075476257, guid: ddead30378c9349409d1337a3f79eefa,
       type: 3}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
@@ -191,7 +191,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1286031525528010502, guid: 8256d086cbb5ad34ab2dcf46d284134b,
+    m_Motion: {fileID: 1286031525528010502, guid: ddead30378c9349409d1337a3f79eefa,
       type: 3}
     m_Threshold: 2.1
     m_Position: {x: 0, y: 0}
@@ -200,7 +200,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1286031525528010502, guid: 8256d086cbb5ad34ab2dcf46d284134b,
+    m_Motion: {fileID: 1286031525528010502, guid: ddead30378c9349409d1337a3f79eefa,
       type: 3}
     m_Threshold: 3.5
     m_Position: {x: 0, y: 0}
@@ -209,7 +209,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1286031525528010502, guid: 8256d086cbb5ad34ab2dcf46d284134b,
+    m_Motion: {fileID: 1286031525528010502, guid: ddead30378c9349409d1337a3f79eefa,
       type: 3}
     m_Threshold: 8
     m_Position: {x: 0, y: 0}
@@ -321,7 +321,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: KnightController
+  m_Name: GoblinController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -752,7 +752,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -7167865033634170173, guid: 8256d086cbb5ad34ab2dcf46d284134b,
+  m_Motion: {fileID: -7167865033634170173, guid: ddead30378c9349409d1337a3f79eefa,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

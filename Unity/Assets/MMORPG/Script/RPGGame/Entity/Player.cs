@@ -42,6 +42,16 @@ public partial class Player : Entity
         }
         
     }
+
+    /// -><summary> 是否允许移动中释放技能</summary>
+    public bool IsMovementAllowed()
+    {
+        // 当前技能允许移动中施放
+
+        // 是否有任何输入
+        return (state == "IDLE" || state == "MOVING") &&
+               !UIUtils.AnyInputActive();
+    }
     
     // death /////////////////////////////////////////////////////////////
     /// -><summary><c>OnDeath</c> 玩家死亡时调用的方法，重写了基类方法。</summary>
