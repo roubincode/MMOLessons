@@ -22,6 +22,8 @@ public partial class Player : Entity
     /// </summary>
     public static Player localPlayer;
 
+    [TextArea(1, 30)] public string toolTip; 
+
     GameObject _nextTarget;
     public Entity nextTarget
     {
@@ -35,15 +37,10 @@ public partial class Player : Entity
         // 暂时就一个角色放在场景里，localPlayer就是当前对象
         localPlayer = this;
 
-        Animator ani = GetComponent<Animator>();
-        foreach(AnimatorControllerParameter p in ani.parameters){
-           // Debug.Log(p.name);
-        }
-        
-    }
-
-    void LateUpdate()
-    {
+        // Animator ani = GetComponent<Animator>();
+        // foreach(AnimatorControllerParameter p in ani.parameters){
+        //    // Debug.Log(p.name);
+        // }
         
     }
     
