@@ -5323,6 +5323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uIState: {fileID: 0}
   btn_setting: {fileID: 7733447910253734696}
+  chatContent: {fileID: 6452727919528453912}
+  messageSlot: {fileID: 3209799466308189758, guid: 3d41bc2fe9498ae43bb2741d9a61a24c,
+    type: 3}
 --- !u!1001 &747979864030522618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5460,6 +5463,12 @@ PrefabInstance:
 --- !u!224 &6452727919851015374 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6047747588912324660, guid: b33e84880d365d24d8befd872dcc323d,
+    type: 3}
+  m_PrefabInstance: {fileID: 747979864030522618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6452727919528453912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6047747589796924386, guid: b33e84880d365d24d8befd872dcc323d,
     type: 3}
   m_PrefabInstance: {fileID: 747979864030522618}
   m_PrefabAsset: {fileID: 0}
