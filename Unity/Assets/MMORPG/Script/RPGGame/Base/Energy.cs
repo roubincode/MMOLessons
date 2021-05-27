@@ -34,7 +34,8 @@ public class Energy : ExAbility
             int bonus = 0;
             foreach (IEnergyBonus bonusComponent in bonusComponents)
                 bonus += bonusComponent.GetEnergyRecoveryBonus();
-            return baseRecovery + bonus;
+            if(reduce) return -baseRecovery + bonus;
+            else return baseRecovery + bonus;
         }
     }
 

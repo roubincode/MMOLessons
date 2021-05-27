@@ -1,5 +1,5 @@
 
 public abstract class ExAbility : Ability
 {
-    bool reduce = false;
+    public bool reduce = false;
 }

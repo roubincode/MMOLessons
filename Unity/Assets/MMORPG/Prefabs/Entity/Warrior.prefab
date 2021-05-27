@@ -1691,6 +1691,7 @@ MonoBehaviour:
   canRecover: 1
   timeRate: 2
   battleTimeRate: 5
+  reduce: 1
   baseRage:
     baseValue: 100
     bonusPerLevel: 0

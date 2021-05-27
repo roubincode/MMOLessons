@@ -7,6 +7,11 @@ public partial class Player : Entity
 {
     
     public long CharaId;
+
+    /// <summary>
+    /// 绑定经验组件
+    /// </summary>
+    public Experience experience;
     public string nickName;
     /// <summary>
     /// 角色职业图标

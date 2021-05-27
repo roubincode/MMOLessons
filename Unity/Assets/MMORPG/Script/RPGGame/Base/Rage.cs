@@ -34,7 +34,8 @@ public class Rage : ExAbility
             int bonus = 0;
             foreach (IRageBonus bonusComponent in bonusComponents)
                 bonus += bonusComponent.GetRageRecoveryBonus();
-            return -baseRecovery + bonus;
+            if(reduce) return -baseRecovery + bonus;
+            else return baseRecovery + bonus;
         }
     }
 
