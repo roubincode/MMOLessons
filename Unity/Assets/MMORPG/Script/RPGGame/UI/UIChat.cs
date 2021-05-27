@@ -16,7 +16,7 @@ public partial class UIChat : MonoBehaviour
     public ChannelInfo teamChannel = new ChannelInfo("/t", "", "[队伍]", null);
     public ChannelInfo partyChannel = new ChannelInfo("/p", "", "[公会]", null);
     public Transform tab;
-    public ChannelInfo localChannel;
+    private ChannelInfo localChannel;
 
     public KeyCode[] activationKeys = {KeyCode.Return, KeyCode.KeypadEnter};
     public int keepHistory = 100; 
