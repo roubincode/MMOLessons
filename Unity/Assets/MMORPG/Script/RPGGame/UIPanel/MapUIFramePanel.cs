@@ -6,6 +6,8 @@ public class MapUIFramePanel : UIPanel
 {
     public Button btn_setting;
     public GameObject chatContent;
+
+    public UIAbility uIAbility;
     public UIMessageSlot messageSlot;
     void Start()
     {
@@ -27,6 +29,7 @@ public class MapUIFramePanel : UIPanel
         base.EnterPanel();
 
         RPGManager.Instance.CreateLocalPlayer();
+        if(uIAbility!=null) uIAbility.RefreshAbility();
     }
 
     public override void ExitPanel()

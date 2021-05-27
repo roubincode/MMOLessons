@@ -19,6 +19,18 @@ public abstract partial class Entity : NetworkBehaviour
     new public Collider collider;
     public AudioSource audioSource;
 
+    /// <summary>
+    /// 角色等级  
+    /// </summary>
+    public Level level;
+    /// <summary>
+    /// 角色主能力（血）
+    /// </summary>
+    public Ability ability;
+    /// <summary>
+    /// 角色扩展能力（蓝，怒气，能量）  
+    /// </summary>
+    public ExAbility exAbility;  
 
     /// <summary>
     /// 角色战斗或脱战状态  

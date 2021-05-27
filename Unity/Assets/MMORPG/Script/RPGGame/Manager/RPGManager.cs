@@ -54,6 +54,7 @@ public class RPGManager : MonoBehaviour
         localPlayer.name = selectName;
         localPlayer.GetComponent<CharacterMovement>().enabled = true;
         localPlayer.GetComponent<Player>().nickName = selectName;
+        Player.localPlayer = player;
         
         CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
         cameraMMO.enabled = true;
