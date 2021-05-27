@@ -1557,6 +1557,9 @@ GameObject:
   - component: {fileID: 8617687279122759190}
   - component: {fileID: 8617687279115522052}
   - component: {fileID: 7553634137272058507}
+  - component: {fileID: 5906680438430792339}
+  - component: {fileID: -8261828913193404883}
+  - component: {fileID: -4193665000663708266}
   - component: {fileID: 8909174091955846154}
   - component: {fileID: 1279841410154540376}
   - component: {fileID: 1533366543603274820}
@@ -1634,6 +1637,9 @@ MonoBehaviour:
   animator: {fileID: 8617687279115522052}
   collider: {fileID: 827679811322893876}
   audioSource: {fileID: 5750010537465996304}
+  level: {fileID: -4193665000663708266}
+  ability: {fileID: 5906680438430792339}
+  exAbility: {fileID: -8261828913193404883}
   inbattle: 0
   _gold: 0
   _state: IDLE
@@ -1642,6 +1648,67 @@ MonoBehaviour:
   classIcon: {fileID: 0}
   portraitIcon: {fileID: 21300000, guid: 1d03ee9c3a6eb4f408e45f740ced9749, type: 3}
   toolTip: "\u91CE\u86EE\u4EBA\u82E5\u8981\u5728\u6587\u660E\u793E\u4F1A\u4E2D\u53D6\u5F97\u4E00\u5E2D\u4E4B\u5730\uFF0C\u6700\u597D\u7684\u65B9\u5F0F\u5C31\u662F\u53C2\u52A0\u5192\u9669\u3002\n\u91CE\u86EE\u4EBA\u662F\u6770\u51FA\u7684\u6218\u6597\u8005\uFF0C\u4E00\u822C\u6218\u58EB\u662F\u9760\u826F\u597D\u7684\u8BAD\u7EC3\uFF0C\u91CE\u86EE\u4EBA\u5374\u62E5\u6709\u5F3A\u5927\u72C2\u66B4\u7684\u529B\u91CF\u3002\u5F53\u9677\u5165\u72C2\u66B4\u72B6\u6001\u65F6\uFF0C\u4ED6\u4EEC\u4F1A\u53D8\u5F97\u66F4\u5F3A\u608D\u65E0\u654C\uFF0C\u66F4\u80FD\u6253\u51FB\u5BF9\u624B\u548C\u627F\u53D7\u653B\u51FB\u3002\u72C2\u66B4\u4E4B\u540E\u4ED6\u4EEC\u4F1A\u53D8\u5F97\u975E\u5E38\u75B2\u7D2F\uFF0C\u6240\u4EE5\u91CE\u86EE\u4EBA\u4E00\u5929\u5185\u80FD\u72C2\u66B4\u7684\u6B21\u6570\u6709\u9650\uFF0C\u4F46\u8FD9\u5DF2\u7ECF\u5F88\u591F\u4E86\u3002"
+--- !u!114 &5906680438430792339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617687279122785014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1b242a98ced694881cdae6a66028c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityType: "\u751F\u547D"
+  abilitySlot: {fileID: 5401048321281281341, guid: b177bf0115354cb4ca238a63730da37d,
+    type: 3}
+  spawnFull: 1
+  canRecover: 1
+  timeRate: 2
+  battleTimeRate: 5
+  perHealth: 36
+  baseHealth:
+    baseValue: 220
+    bonusPerLevel: 29
+  baseRecovery: 8
+--- !u!114 &-8261828913193404883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617687279122785014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c052e61c55d0fe4b8f43a21e6dc908a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityType: "\u6012\u6C14"
+  abilitySlot: {fileID: 5401048321281281341, guid: 24dcfb7c3b1aaff459af15444e7e717e,
+    type: 3}
+  spawnFull: 0
+  canRecover: 1
+  timeRate: 2
+  battleTimeRate: 5
+  baseRage:
+    baseValue: 100
+    bonusPerLevel: 0
+  baseRecovery: 6
+--- !u!114 &-4193665000663708266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617687279122785014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a22984086336d459004746a4dcf099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: 28
+  max: 50
 --- !u!114 &8909174091955846154
 MonoBehaviour:
   m_ObjectHideFlags: 0

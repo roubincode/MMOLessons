@@ -2988,7 +2988,7 @@ MonoBehaviour:
   baseHealth:
     baseValue: 100
     bonusPerLevel: 30
-  baseRecovery: 5
+  baseRecovery: 8
 --- !u!114 &8011654566248523690
 MonoBehaviour:
   m_ObjectHideFlags: 0
