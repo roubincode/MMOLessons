@@ -2291,6 +2291,7 @@ GameObject:
   - component: {fileID: -1186093107245148528}
   - component: {fileID: -873116290489781753}
   - component: {fileID: 6141128550329803288}
+  - component: {fileID: 3029077830911771969}
   - component: {fileID: 7152906029705263543}
   - component: {fileID: -913105352482395113}
   - component: {fileID: -7834896238953445862}
@@ -2371,6 +2372,7 @@ MonoBehaviour:
   _gold: 0
   _state: IDLE
   CharaId: 0
+  experience: {fileID: 3029077830911771969}
   nickName: 
   classIcon: {fileID: 0}
   portraitIcon: {fileID: 21300000, guid: 15fc1d5a369628c419bba86a4630a661, type: 3}
@@ -2419,6 +2421,7 @@ MonoBehaviour:
   canRecover: 1
   timeRate: 2
   battleTimeRate: 5
+  reduce: 0
   perMana: 16
   baseMana:
     baseValue: 160
@@ -2438,6 +2441,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current: 32
   max: 50
+--- !u!114 &3029077830911771969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515859526209149746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aebf648f7dcd2144ca9264a705193719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 6141128550329803288}
+  _current: 800
+  _max:
+    multiplier: 100
+    baseValue: 1.13
+  deathLossPercent: 0.05
 --- !u!114 &7152906029705263543
 MonoBehaviour:
   m_ObjectHideFlags: 0
