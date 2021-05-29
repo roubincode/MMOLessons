@@ -59,6 +59,3 @@ MonoBehaviour:
   - key: SkeletonWarrior
     gameObject: {fileID: 7701969063848976339, guid: 6292cdb26c234ca429ffdced06e4749b,
       type: 3}
-  - key: Warrior
-    gameObject: {fileID: 8617687279122785014, guid: cf90d5a3488c1cf42870f508a2072fb0,
-      type: 3}
