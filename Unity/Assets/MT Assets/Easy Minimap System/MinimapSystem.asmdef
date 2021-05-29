@@ -1,11 +1,9 @@
 {
-    "name": "RPGGame",
-    "references": [
-        "GUID:b9c53f0a3e3859d48b783031e7e73a53"
-    ],
+    "name": "MinimapSystem",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,

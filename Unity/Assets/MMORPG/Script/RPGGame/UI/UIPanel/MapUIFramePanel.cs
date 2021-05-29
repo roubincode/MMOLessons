@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using MTAssets.EasyMinimapSystem;
 /// <summary>
 /// 选角面板
 /// </summary>
@@ -11,12 +12,11 @@ public class MapUIFramePanel : BasePanel
     
     public UIAbility uIAbility;
     public UIMessageSlot messageSlot;
-
+    public MinimapRenderer mapRenderer;
     protected override void Awake()
     {
         base.Awake();
         thisPanel = PanelType.MapUIFrame;
-
     }
 
     void Start(){
