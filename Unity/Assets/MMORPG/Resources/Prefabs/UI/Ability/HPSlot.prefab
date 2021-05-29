@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2739130558911359669}
   - component: {fileID: 7045802614685800701}
-  - component: {fileID: 7613269739952032382}
   - component: {fileID: 128571844120522205}
   m_Layer: 5
   m_Name: HP Fill
@@ -46,20 +45,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4078466644542325490}
   m_CullTransparentMesh: 0
---- !u!114 &7613269739952032382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4078466644542325490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93583ce1d576b3342ab9a841885cd9c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  slider: {fileID: 128571844120522205}
 --- !u!114 &128571844120522205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5205475771118431237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93583ce1d576b3342ab9a841885cd9c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f6330765b3fec54c955af49a64d1453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 606482234733226529}

@@ -9,6 +9,7 @@ public class MapUIFramePanel : BasePanel
 
     public GameObject chatContent;
     
+    public UIAbility uIAbility;
     public UIMessageSlot messageSlot;
 
     protected override void Awake()
@@ -35,6 +36,9 @@ public class MapUIFramePanel : BasePanel
         GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 0.0f);
         GetComponent<RectTransform>().offsetMax = new Vector2(0.0f, 0.0f);
         base.EnterPanel();
+
+        RPGManager.Instance.CreateLocalPlayer();
+        if(uIAbility!=null) uIAbility.RefreshAbility();
     }
 
     public override void ExitPanel()

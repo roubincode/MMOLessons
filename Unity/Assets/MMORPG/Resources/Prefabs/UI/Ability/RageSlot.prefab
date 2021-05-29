@@ -88,7 +88,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6205013639872045699}
   - component: {fileID: 5484555723136422082}
-  - component: {fileID: 2258074531389546817}
   - component: {fileID: 3143276224518429539}
   m_Layer: 5
   m_Name: Rage Fill
@@ -124,20 +123,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4770764137368548165}
   m_CullTransparentMesh: 0
---- !u!114 &2258074531389546817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4770764137368548165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93583ce1d576b3342ab9a841885cd9c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  slider: {fileID: 3143276224518429539}
 --- !u!114 &3143276224518429539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +208,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5205475771118431237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93583ce1d576b3342ab9a841885cd9c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f6330765b3fec54c955af49a64d1453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 5778496620774241270}
