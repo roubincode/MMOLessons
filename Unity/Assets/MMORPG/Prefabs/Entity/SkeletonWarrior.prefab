@@ -2368,12 +2368,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f709c7dd788d4e4a9177a93761ce7c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 21300000, guid: 38273549d4915b641a77c99c0a8b7777, type: 3}
+  itemSprite: {fileID: 21300000, guid: 33e6b5d853d27c04a902f52c4d3028ee, type: 3}
   spriteColor: {r: 1, g: 0.9681714, b: 0.0990566, a: 1}
   flipInX: 0
   flipInY: 1
   raycastTarget: 1
-  sizeOnMinimap: {x: 30, y: 0, z: 30}
+  sizeOnMinimap: {x: 20, y: 0, z: 20}
   sizeOnHighlight: 20
   orderInLayer: 5
   particlesHighlightMode: 0
@@ -2398,13 +2398,13 @@ MonoBehaviour:
   renderTexture: {fileID: 0}
   captureShape: 1
   captureResolutionSquare: 0
-  captureResolutionRectangular: 2
+  captureResolutionRectangular: 3
   captureMode: 0
   layersToCaptureIn3d:
     serializedVersion: 2
     m_Bits: 0
-  fieldOfView: 140
-  followRotationOf: 0
+  fieldOfView: 70
+  followRotationOf: 1
   customGameObjectToFollowRotation: {fileID: 0}
   movementsSmoothing: 14
 --- !u!136 &4620877098605011025

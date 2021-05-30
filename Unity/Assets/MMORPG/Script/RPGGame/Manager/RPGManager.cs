@@ -61,7 +61,9 @@ public class RPGManager : MonoBehaviour
 
         // minimap
         MapUIFramePanel mapUI = (MapUIFramePanel)UIManager.mUIFacade.GetUI(StringManager.MapUIFramePanel);
-        mapUI.mapRenderer.minimapCameraToShow = localPlayer.GetComponent<MinimapCamera>();
+        GameObject mapCamera = GameObject.Find("MapCamera");
+        mapUI.minimapRenderer.minimapCameraToShow = cameraMMO.minimapCamera.GetComponent<MinimapCamera>();
+        mapUI.bigmapRenderer.minimapCameraToShow = cameraMMO.bigmapCamera.GetComponent<MinimapCamera>();
     }
 
     public void ClearLoaclPlayer(){

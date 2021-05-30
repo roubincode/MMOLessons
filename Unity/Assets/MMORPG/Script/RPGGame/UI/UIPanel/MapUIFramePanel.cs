@@ -12,7 +12,10 @@ public class MapUIFramePanel : BasePanel
     
     public UIAbility uIAbility;
     public UIMessageSlot messageSlot;
-    public MinimapRenderer mapRenderer;
+    public MinimapRenderer minimapRenderer;
+    public MinimapRenderer bigmapRenderer;
+    public KeyCode[] activationKeys = {KeyCode.M, KeyCode.M};
+    public GameObject bigMapPanel;
     protected override void Awake()
     {
         base.Awake();
@@ -29,6 +32,13 @@ public class MapUIFramePanel : BasePanel
         btn_setting.onClick.SetListener(() => {
             mUIFacade.GetUI(StringManager.SettingPanel).EnterPanel();     
         });
+    }
+
+    void Update(){
+        if (Utils.AnyKeyDown(activationKeys)){
+            if(!bigMapPanel.activeSelf) bigMapPanel.SetActive(true);
+            else bigMapPanel.SetActive(false);
+        }
     }
 
     public override void EnterPanel()
