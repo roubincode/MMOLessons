@@ -2099,6 +2099,7 @@ GameObject:
   - component: {fileID: 6119928916834678379}
   - component: {fileID: 5925031356890120635}
   - component: {fileID: 3317107248307051524}
+  - component: {fileID: -8122821815239660533}
   - component: {fileID: 4620877098605011025}
   - component: {fileID: 4290206573775157265}
   - component: {fileID: 7007157974107245349}
@@ -2353,6 +2354,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+--- !u!114 &-8122821815239660533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f709c7dd788d4e4a9177a93761ce7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 21300000, guid: 806a9ca3b359fdd47a1755d2fd7cfb0a, type: 3}
+  spriteColor: {r: 1, g: 1, b: 1, a: 1}
+  flipInX: 0
+  flipInY: 1
+  raycastTarget: 1
+  sizeOnMinimap: {x: 20, y: 0, z: 20}
+  sizeOnHighlight: 20
+  orderInLayer: 5
+  particlesHighlightMode: 0
+  particlesSprite: {fileID: 0}
+  particlesColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  particlesSizeMultiplier: 1
+  followRotationOf: 0
+  customGameObjectToFollowRotation: {fileID: 0}
+  movementsSmoothing: 14
 --- !u!136 &4620877098605011025
 CapsuleCollider:
   m_ObjectHideFlags: 0

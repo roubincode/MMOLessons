@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using MTAssets.EasyMinimapSystem;
 public class MapUIFramePanel : UIPanel
 {
     public Button btn_setting;
@@ -9,6 +10,11 @@ public class MapUIFramePanel : UIPanel
 
     public UIAbility uIAbility;
     public UIMessageSlot messageSlot;
+
+    public MinimapRenderer minimapRenderer;
+    public MinimapRenderer bigmapRenderer;
+    public KeyCode[] activationKeys = {KeyCode.M, KeyCode.M};
+    public GameObject bigMapPanel;
     void Start()
     {
         // 世界频道通知
@@ -20,6 +26,13 @@ public class MapUIFramePanel : UIPanel
         btn_setting.onClick.SetListener(() => {
             uIState.EnterSettingPanel();
         });
+    }
+
+    void Update(){
+        if (Utils.AnyKeyDown(activationKeys)){
+            if(!bigMapPanel.activeSelf) bigMapPanel.SetActive(true);
+            else bigMapPanel.SetActive(false);
+        }
     }
 
     public override void EnterPanel()

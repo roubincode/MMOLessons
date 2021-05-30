@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using Mirror;
+using MTAssets.EasyMinimapSystem;
 /// <summary>
 /// 游戏总管理,负责管理其他所有的管理者
 /// </summary>
@@ -9,6 +10,7 @@ public class RPGManager : MonoBehaviour
 {
     public static RPGManager Instance { get; private set; } // RPGManager单例
     public static IMMOManager MMOMgr;
+    public UIState uIState;
     public Transform select_camLocation;
     public Transform select_spawnLoaction;
     public Transform create_spawnLoaction;
@@ -56,9 +58,15 @@ public class RPGManager : MonoBehaviour
         localPlayer.GetComponent<Player>().nickName = selectName;
         Player.localPlayer = player;
         
+        // camera
         CameraMMO cameraMMO = Camera.main.GetComponent<CameraMMO>();
         cameraMMO.enabled = true;
         cameraMMO.target = localPlayer.transform;
+
+        // minimap
+        MapUIFramePanel mapUI = (MapUIFramePanel)uIState.mapUIFrame;
+        mapUI.minimapRenderer.minimapCameraToShow = cameraMMO.minimapCamera.GetComponent<MinimapCamera>();
+        mapUI.bigmapRenderer.minimapCameraToShow = cameraMMO.bigmapCamera.GetComponent<MinimapCamera>();
     }
 
     public void ClearLoaclPlayer(){
