@@ -14,6 +14,7 @@ public class SelectableCharacter : MonoBehaviour
     }
     void OnMouseDown()
     {
+        if(Utils.IsCursorOverUserInterface()) return;
         RPGManager.Instance.NoneSelectd();
         RPGManager.Instance.selectClass = player.ClassName;
         RPGManager.Instance.selectName = player.nickName;

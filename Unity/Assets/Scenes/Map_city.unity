@@ -46476,7 +46476,7 @@ MonoBehaviour:
   layersToCaptureIn3d:
     serializedVersion: 2
     m_Bits: 0
-  fieldOfView: 70
+  fieldOfView: 60
   followRotationOf: 0
   customGameObjectToFollowRotation: {fileID: 0}
   movementsSmoothing: 14

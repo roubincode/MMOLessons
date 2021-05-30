@@ -36,6 +36,9 @@ public class RPGManager : MonoBehaviour
     }
 
     private void Start(){
+        // 设置MT mapItem尺寸比例默认规格.
+        MinimapDataGlobal.SetMinimapItemsSizeGlobalMultiplier(1.0f);
+
         playerClasses = MMOMgr.FindPlayerClasses();
 
         foreach(Player player in playerClasses){

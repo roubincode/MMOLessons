@@ -2371,7 +2371,7 @@ MonoBehaviour:
   flipInX: 0
   flipInY: 1
   raycastTarget: 1
-  sizeOnMinimap: {x: 20, y: 0, z: 20}
+  sizeOnMinimap: {x: 15, y: 0, z: 20}
   sizeOnHighlight: 20
   orderInLayer: 5
   particlesHighlightMode: 0
