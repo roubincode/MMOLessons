@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using MTAssets.EasyMinimapSystem;
 public class CameraMMO : MonoBehaviour
 {
     public Transform target;
@@ -22,6 +22,9 @@ public class CameraMMO : MonoBehaviour
 
     // 设置哪些layer的物体不可以遮挡摄像机
     public LayerMask viewBlockingLayers;
+
+    public MinimapCamera minimapCamera;
+    public MinimapCamera bigmapCamera;
 
     Vector3 rotation;
     bool rotationInitialized;

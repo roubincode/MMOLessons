@@ -1,12 +1,15 @@
 {
     "name": "RPGGame",
-    "references": [],
-    "optionalUnityReferences": [],
+    "references": [
+        "GUID:b9c53f0a3e3859d48b783031e7e73a53"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

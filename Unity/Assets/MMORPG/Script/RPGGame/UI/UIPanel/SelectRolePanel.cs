@@ -35,9 +35,7 @@ public class SelectRolePanel : BasePanel
         btn_enterMap.onClick.SetListener(() => {
             ExitPanel();
             mUIFacade.ChangeScene(new CityScene(mUIFacade));
-            mUIFacade.ExitScene();
-           
-            RPGManager.Instance.CreateLocalPlayer();
+            mUIFacade.ExitScene();  
         });
 
         btn_back.onClick.SetListener(() => {

@@ -2092,9 +2092,15 @@ GameObject:
   - component: {fileID: 7037213763458844009}
   - component: {fileID: 3983742242988334867}
   - component: {fileID: -3163768673985515898}
+  - component: {fileID: 7080113285787823481}
+  - component: {fileID: -1238002396128182060}
+  - component: {fileID: 5331687695324632616}
+  - component: {fileID: -1890032497234287355}
   - component: {fileID: 6119928916834678379}
   - component: {fileID: 5925031356890120635}
   - component: {fileID: 3317107248307051524}
+  - component: {fileID: -1144842242942757420}
+  - component: {fileID: -4551897445136789840}
   - component: {fileID: 4620877098605011025}
   - component: {fileID: 4290206573775157265}
   - component: {fileID: 7007157974107245349}
@@ -2159,15 +2165,100 @@ MonoBehaviour:
   animator: {fileID: 3983742242988334867}
   collider: {fileID: 4620877098605011025}
   audioSource: {fileID: 7007157974107245349}
+  movement: {fileID: 0}
+  level: {fileID: 7080113285787823481}
+  ability: {fileID: -1238002396128182060}
+  exAbility: {fileID: 5331687695324632616}
   inbattle: 0
   _gold: 0
   _state: IDLE
   CharaId: 0
   nickName: 
+  experience: {fileID: -1890032497234287355}
   classIcon: {fileID: 0}
   portraitIcon: {fileID: 21300000, guid: 82820054f599c59459ad32f702781337, type: 3}
   toolTip: "\u9AB7\u9AC5\u6218\u58EB\u662F\u4EA1\u7075\u4E16\u754C\u6700\u53EF\u6015\u7684\u9AD8\u7206\u53D1\u6597\u58EB\uFF0C\u80FD\u77AC\u95F4\u4EA7\u751F\u5927\u91CF\u7269\u7406\u4F24\u5BB3\uFF0C\u4F46\u9632\u5FA1\u6781\u4F4E\uFF0C\u6B7B\u4EA1\u540E\u77ED\u6682\u7B49\u5F85\u540E\u53EF\u590D\u751F\u3002
     \u7531\u4EA1\u7075\u65CF\u5DEB\u5E08\u53EC\u5524\u51FA\u7684\u5355\u4F4D\uFF0C\u5355\u5175\u6218\u6597\u529B\u6781\u5F3A\uFF0C\u53EF\u4EE5\u83B7\u5F97\u90AA\u6076\u529B\u91CF\u3001\u90AA\u6076\u88C5\u7532\u3001\u9AA8\u8D28\u589E\u5F3A\u672F\u7684\u5347\u7EA7\uFF0C\u6709\u6218\u672F\u9AB7\u9AC5\u6D77\u3002"
+--- !u!114 &7080113285787823481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a22984086336d459004746a4dcf099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: 30
+  max: 50
+--- !u!114 &-1238002396128182060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1b242a98ced694881cdae6a66028c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityType: "\u751F\u547D"
+  abilitySlot: {fileID: 5401048321281281341, guid: b177bf0115354cb4ca238a63730da37d,
+    type: 3}
+  spawnFull: 1
+  canRecover: 1
+  timeRate: 2
+  battleTimeRate: 5
+  perHealth: 30
+  baseHealth:
+    baseValue: 150
+    bonusPerLevel: 25
+  baseRecovery: 5
+--- !u!114 &5331687695324632616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c052e61c55d0fe4b8f43a21e6dc908a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityType: "\u6012\u6C14"
+  abilitySlot: {fileID: 5401048321281281341, guid: 24dcfb7c3b1aaff459af15444e7e717e,
+    type: 3}
+  spawnFull: 0
+  canRecover: 1
+  timeRate: 2
+  battleTimeRate: 5
+  reduce: 1
+  baseRage:
+    baseValue: 100
+    bonusPerLevel: 0
+  baseRecovery: 5
+--- !u!114 &-1890032497234287355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aebf648f7dcd2144ca9264a705193719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 7080113285787823481}
+  _current: 1200
+  _max:
+    multiplier: 100
+    baseValue: 1.13
+  deathLossPercent: 0.05
 --- !u!114 &6119928916834678379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2265,6 +2356,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+--- !u!114 &-1144842242942757420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f709c7dd788d4e4a9177a93761ce7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 21300000, guid: 33e6b5d853d27c04a902f52c4d3028ee, type: 3}
+  spriteColor: {r: 1, g: 0.9681714, b: 0.0990566, a: 1}
+  flipInX: 0
+  flipInY: 1
+  raycastTarget: 1
+  sizeOnMinimap: {x: 20, y: 0, z: 20}
+  sizeOnHighlight: 20
+  orderInLayer: 5
+  particlesHighlightMode: 0
+  particlesSprite: {fileID: 0}
+  particlesColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  particlesSizeMultiplier: 1
+  followRotationOf: 0
+  customGameObjectToFollowRotation: {fileID: 0}
+  movementsSmoothing: 14
+--- !u!114 &-4551897445136789840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701969063848976339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9f944f29d4e9e147bb25cdab717b02b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderTexture: {fileID: 0}
+  captureShape: 1
+  captureResolutionSquare: 0
+  captureResolutionRectangular: 3
+  captureMode: 0
+  layersToCaptureIn3d:
+    serializedVersion: 2
+    m_Bits: 0
+  fieldOfView: 70
+  followRotationOf: 1
+  customGameObjectToFollowRotation: {fileID: 0}
+  movementsSmoothing: 14
 --- !u!136 &4620877098605011025
 CapsuleCollider:
   m_ObjectHideFlags: 0
