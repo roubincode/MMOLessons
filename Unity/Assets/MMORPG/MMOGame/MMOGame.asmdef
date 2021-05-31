@@ -1,0 +1,16 @@
+{
+    "name": "MMOGame",
+    "references": [
+        "GUID:3a3eae2be88311c428b0386db8132b71",
+        "GUID:53d5200f67e9f024cb2bdd0779fc894b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
