@@ -1,4 +1,0 @@
-#引用程序集
-/r:MyClass.dll
-#编译输出exe
-/target:exe /out:Main.exe MainApp.cs
