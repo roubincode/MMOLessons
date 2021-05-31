@@ -1,0 +1,5 @@
+#引用Module
+/addmodule:MyFirstModule.netmodule
+/addmodule:MySecondModule.netmodule
+#编译输出exe
+/target:exe /out:MainModule.exe MainModule.cs
