@@ -30,6 +30,7 @@ public class Utils
         return false;
     }
 
+    // 判断指定按键按下
     public static bool AnyKeyDown(KeyCode[] keys)
     {
         // 避免Linq.Any，因为它影响GC性能
@@ -39,6 +40,7 @@ public class Utils
         return false;
     }
 
+    // 判断指定按键按住
     public static bool AnyKeyPressed(KeyCode[] keys)
     {
         // 避免Linq.Any，因为它影响GC性能

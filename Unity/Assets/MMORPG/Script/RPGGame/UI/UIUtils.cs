@@ -29,7 +29,7 @@ public class UIUtils
         return false;
     }
 
-    // 严谨的取消选择UI元素
+    // 严谨的取消选中的UI元素
     //（点击有些地方时，会抛出错误，所以我们必须双重检查）
     public static void DeselectCarefully()
     {
