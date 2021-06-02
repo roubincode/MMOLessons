@@ -4,7 +4,7 @@ public class Program
 
     static void Main(string[] args)
     {
-        new Dog().Print();
         new Cat().Print();
+        new Dog().Print();
     }
 }
