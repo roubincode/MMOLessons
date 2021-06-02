@@ -1,0 +1,5 @@
+#引用程序集
+/r:.\Bin\MyClass.dll
+
+#编译输出exe
+/out:MainProgram.exe MainProgram.cs
