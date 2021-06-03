@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CityScene : SceneState
+public class MapScene : SceneState
 {
-    public CityScene(UIFacade uIFacade) : base(uIFacade) { }
+    public MapScene(UIFacade uIFacade) : base(uIFacade) { }
     public override void EnterScene()
     {
         mUIFacade.AddPanelToDict(StringManager.MapUIFramePanel);

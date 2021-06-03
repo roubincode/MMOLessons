@@ -34,7 +34,7 @@ public class SelectRolePanel : BasePanel
 
         btn_enterMap.onClick.SetListener(() => {
             ExitPanel();
-            mUIFacade.ChangeScene(new CityScene(mUIFacade));
+            mUIFacade.ChangeScene(new MapScene(mUIFacade));
             mUIFacade.ExitScene();  
         });
 
