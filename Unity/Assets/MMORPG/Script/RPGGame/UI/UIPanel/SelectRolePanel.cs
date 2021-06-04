@@ -35,13 +35,11 @@ public class SelectRolePanel : BasePanel
         btn_enterMap.onClick.SetListener(() => {
             ExitPanel();
             mUIFacade.ChangeScene(new MapScene(mUIFacade));
-            mUIFacade.ExitScene();  
         });
 
         btn_back.onClick.SetListener(() => {
             ExitPanel();
             mUIFacade.ChangeScene(new AccountScene(mUIFacade));
-            mUIFacade.ExitScene();//应该是加载新场景完成后执行，暂时直接这里调用
 
             RPGManager.Instance.ClearPlayerList();
         });

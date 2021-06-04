@@ -20,7 +20,6 @@ public class LoginPanel : BasePanel
 
             ExitPanel();
             mUIFacade.ChangeScene(new RoleScene(mUIFacade));
-            mUIFacade.ExitScene();//应该是加载新场景完成后执行，暂时直接这里调用
         });
 
         btn_register.onClick.SetListener(() => {

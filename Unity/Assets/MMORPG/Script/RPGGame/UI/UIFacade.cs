@@ -40,6 +40,7 @@ public class UIFacade
     {
         lastScene = currentScene;
         currentScene = scene;
+        ExitScene();
     }
 
     public IBasePanel GetUI(string pName){
