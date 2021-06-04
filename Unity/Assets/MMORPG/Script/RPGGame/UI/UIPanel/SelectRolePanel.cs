@@ -52,6 +52,7 @@ public class SelectRolePanel : BasePanel
         GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 0.0f);
         GetComponent<RectTransform>().offsetMax = new Vector2(0.0f, 0.0f);
         base.EnterPanel();
+
         RPGManager.Instance.CamLocation(RPGManager.Instance.select_camLocation);
 
         // 动态生成内容不放在Start方法中，要放在EnterPanel方法中

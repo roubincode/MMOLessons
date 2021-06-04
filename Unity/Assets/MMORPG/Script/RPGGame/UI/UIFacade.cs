@@ -15,8 +15,8 @@ public class UIFacade
     public Dictionary<string, IBasePanel> currentScenePanelDict = new Dictionary<string, IBasePanel>();
 
     // 场景状态
-    public ISceneState currentScene;
-    public ISceneState lastScene;
+    public IUIScene currentScene;
+    public IUIScene lastScene;
 
     // 全局lastPanel
     public PanelType lastPanel = PanelType.Null;
@@ -36,7 +36,7 @@ public class UIFacade
     }
 
     // 改变当前场景的状态
-    public void ChangeScene(ISceneState scene)
+    public void ChangeScene(IUIScene scene)
     {
         lastScene = currentScene;
         currentScene = scene;

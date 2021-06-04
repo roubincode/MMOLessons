@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapScene : SceneState
+public class MapScene : UIScene
 {
     public MapScene(UIFacade uIFacade) : base(uIFacade) { }
     public override void EnterScene()

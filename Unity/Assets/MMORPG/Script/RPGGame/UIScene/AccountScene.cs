@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AccountScene : SceneState
+public class AccountScene : UIScene
 {
     public AccountScene(UIFacade uIFacade) : base(uIFacade) { }
     public override void EnterScene()

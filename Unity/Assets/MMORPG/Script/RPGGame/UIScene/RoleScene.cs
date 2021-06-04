@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoleScene : SceneState
+public class RoleScene : UIScene
 {
     public RoleScene(UIFacade uIFacade) : base(uIFacade) { }
     public override void EnterScene()
