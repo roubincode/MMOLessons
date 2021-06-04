@@ -18,18 +18,10 @@ public class UIFacade
     // 全局lastPanel
     public PanelType lastPanel = PanelType.Null;
 
-    public Transform canvas; // UIPanel放置的容器
-
     public UIFacade(UIManager uIManager)
     {
         mUIManager = uIManager;
         mGameManager = RPGManager.Instance;
-        Init();
-    }
-
-    public void Init()
-    {
-        canvas = GameObject.Find("Canvas").transform;
     }
 
     // 改变当前场景的状态
@@ -59,27 +51,12 @@ public class UIFacade
     // 实例化当前场景下的UIPanel并存入字典
     public void InitUIPanelDict()
     {
-        
-        foreach (var item in mUIManager.currentScenePanelGoDict)
-        {
-            item.Value.transform.SetParent(canvas);
-            item.Value.transform.localPosition = Vector3.zero;
-            item.Value.transform.localScale = Vector3.one;
-            item.Value.SetActive(false); // 初始时先取消Panel的激活状态
-            IBasePanel basePanel = item.Value.GetComponent<IBasePanel>();
-            if (basePanel == null)
-            {
-                Debug.LogWarning(string.Format("{0}上的IBasePanel脚本丢失!", item.Key));
-            }
-            basePanel.InitPanel();  // UIPanel初始化UI
-            mUIManager.currentScenePanelDict.Add(item.Key, basePanel); // 将该场景下的UIPanel身上的Panel脚本添加进字典中
-        }
+        mUIManager.InitUIPanelDict();
     }
 
     // 清空UIPanel字典
     public void ClearUIPanelDict()
     {
-        mUIManager.currentScenePanelDict.Clear();
         mUIManager.ClearUIPanelDict();
     }
 
