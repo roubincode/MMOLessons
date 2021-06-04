@@ -13,7 +13,7 @@ public class AccountScene : UIScene
         base.EnterScene();
 
         // 打开LoginPanel
-        mUIFacade.GetUI(StringManager.LoginPanel).EnterPanel();
+        mUIFacade.GetUIPanel(StringManager.LoginPanel).EnterPanel();
         Camera.main.GetComponent<Animator>().enabled = true;
     }
 

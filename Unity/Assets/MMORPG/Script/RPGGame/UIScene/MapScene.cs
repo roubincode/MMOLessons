@@ -11,7 +11,7 @@ public class MapScene : UIScene
         mUIFacade.AddPanelToDict(StringManager.SettingPanel);
         base.EnterScene();
 
-        mUIFacade.GetUI(StringManager.MapUIFramePanel).EnterPanel();     
+        mUIFacade.GetUIPanel(StringManager.MapUIFramePanel).EnterPanel();     
     }
 
 }

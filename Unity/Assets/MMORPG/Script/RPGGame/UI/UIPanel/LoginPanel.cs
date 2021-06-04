@@ -24,7 +24,7 @@ public class LoginPanel : BasePanel
 
         btn_register.onClick.SetListener(() => {
             ExitPanel();
-            mUIFacade.GetUI(StringManager.RegisterPanel).EnterPanel();     
+            mUIFacade.GetUIPanel(StringManager.RegisterPanel).EnterPanel();     
         });
     }
 

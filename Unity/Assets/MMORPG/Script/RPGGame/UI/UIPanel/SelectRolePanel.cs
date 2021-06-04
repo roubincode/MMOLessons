@@ -29,7 +29,7 @@ public class SelectRolePanel : BasePanel
     void Start(){
         btn_Create.onClick.SetListener(() => {
             ExitPanel();
-            mUIFacade.GetUI(StringManager.CreateRolePanel).EnterPanel();     
+            mUIFacade.GetUIPanel(StringManager.CreateRolePanel).EnterPanel();     
         });
 
         btn_enterMap.onClick.SetListener(() => {
