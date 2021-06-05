@@ -2205,18 +2205,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1b242a98ced694881cdae6a66028c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityType: "\u751F\u547D"
   abilitySlot: {fileID: 5401048321281281341, guid: b177bf0115354cb4ca238a63730da37d,
     type: 3}
   spawnFull: 1
   canRecover: 1
   timeRate: 2
   battleTimeRate: 5
-  perHealth: 30
-  baseHealth:
-    baseValue: 150
-    bonusPerLevel: 25
+  reduce: 0
+  baseOnLevel: 1
+  baseAbility:
+    baseValue: 100
+    bonusPerLevel: 200
   baseRecovery: 5
+  perHealth: 30
 --- !u!114 &5331687695324632616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2229,7 +2230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c052e61c55d0fe4b8f43a21e6dc908a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityType: "\u6012\u6C14"
   abilitySlot: {fileID: 5401048321281281341, guid: 24dcfb7c3b1aaff459af15444e7e717e,
     type: 3}
   spawnFull: 0
@@ -2237,7 +2237,8 @@ MonoBehaviour:
   timeRate: 2
   battleTimeRate: 5
   reduce: 1
-  baseRage:
+  baseOnLevel: 0
+  baseAbility:
     baseValue: 100
     bonusPerLevel: 0
   baseRecovery: 5

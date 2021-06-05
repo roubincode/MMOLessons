@@ -5,7 +5,6 @@ using Mirror;
 //角色能力基本类，派生类有Mana,Health,Combat等
 public abstract class Ability : NetworkBehaviour
 {
-    public string abilityType;
     public UIAbilitySlot abilitySlot;
     int _current = 0;
     /// <summary>

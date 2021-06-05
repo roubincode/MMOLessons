@@ -1823,6 +1823,7 @@ MonoBehaviour:
   animator: {fileID: 2444945091862742447}
   collider: {fileID: 5104397001025371424}
   audioSource: {fileID: 6616782063894952463}
+  movement: {fileID: 0}
   level: {fileID: 3899589564617462139}
   ability: {fileID: 6112271949567640752}
   exAbility: {fileID: 4659557987696188520}
@@ -1830,8 +1831,8 @@ MonoBehaviour:
   _gold: 0
   _state: IDLE
   CharaId: 0
-  experience: {fileID: 5333261793946711475}
   nickName: 
+  experience: {fileID: 5333261793946711475}
   classIcon: {fileID: 0}
   portraitIcon: {fileID: 21300000, guid: bf343ea033f224f4ba6f8fcfe6875e1c, type: 3}
   toolTip: "\u6218\u7532\u5305\u88F9\u4E0D\u4F4F\u90A3\u4EE4\u4EBA\u9050\u60F3\u7684\u66F2\u7EBF\uFF0C\u9ED1\u8272\u7684\u795E\u79D8\u4E0E\u8BE1\u5F02\u5374\u66F4\u7A81\u663E\u51FA\u5176\u4E3B\u4EBA\u7684\u4E0D\u51E1\uFF0C\u6CA1\u6709\u8FC7\u591A\u7684\u4FEE\u9970\u5374\u663E\u73B0\u51FA\u9AD8\u8D35\u3002\n\u5934\u76D4\u4E4B\u4E0B\u662F\u4E00\u53CC\u5982\u5927\u6D77\u822C\u6DF1\u9083\u773C\u775B\uFF0C\u8BA9\u4EBA\u5FCD\u4E0D\u4F4F\u6DF1\u9677\u5176\u4E2D\u3002\u51B0\u971C\u822C\u7684\u4FCF\u8138\u4F7F\u4EBA\uFF0C\u4E0D\u6562\u5BF9\u5176\u6000\u6709\u54EA\u6015\u4E00\u4E1D\u7684\u4EB5\u6E0E\u4E4B\u610F\u3002"
@@ -1847,18 +1848,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1b242a98ced694881cdae6a66028c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityType: "\u751F\u547D"
   abilitySlot: {fileID: 5401048321281281341, guid: b177bf0115354cb4ca238a63730da37d,
     type: 3}
   spawnFull: 1
   canRecover: 1
   timeRate: 2
   battleTimeRate: 5
-  perHealth: 30
-  baseHealth:
-    baseValue: 200
-    bonusPerLevel: 30
+  reduce: 0
+  baseOnLevel: 1
+  baseAbility:
+    baseValue: 100
+    bonusPerLevel: 250
   baseRecovery: 2
+  perHealth: 30
 --- !u!114 &4659557987696188520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1871,7 +1873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb6d83fe2821bda4481bdb4c502bf9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityType: "\u80FD\u91CF"
   abilitySlot: {fileID: 5401048321281281341, guid: b4314adf62714f84fb4717e24ed5dcb7,
     type: 3}
   spawnFull: 0
@@ -1879,7 +1880,8 @@ MonoBehaviour:
   timeRate: 2
   battleTimeRate: 5
   reduce: 0
-  baseEnergy:
+  baseOnLevel: 0
+  baseAbility:
     baseValue: 100
     bonusPerLevel: 0
   baseRecovery: 5

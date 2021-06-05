@@ -2955,6 +2955,7 @@ MonoBehaviour:
   animator: {fileID: 3659902705087206719}
   collider: {fileID: 7691534259300508876}
   audioSource: {fileID: 832598038125338906}
+  movement: {fileID: 0}
   level: {fileID: 2327987739784275762}
   ability: {fileID: 2516586868352840589}
   exAbility: {fileID: 8011654566248523690}
@@ -2962,8 +2963,8 @@ MonoBehaviour:
   _gold: 0
   _state: IDLE
   CharaId: 0
-  experience: {fileID: 8721008832580165075}
   nickName: 
+  experience: {fileID: 8721008832580165075}
   classIcon: {fileID: 0}
   portraitIcon: {fileID: 21300000, guid: 45398acbfd407a14cb7992a5945b6f6b, type: 3}
   toolTip: "\u9ED1\u6697\u6CD5\u5E08\u7531\u5143\u7D20\u3001\u6B7B\u4EA1\u3001\u610F\u5FD7\u4E09\u4E2A\u5929\u8D4B\u7EC4\u6210\uFF0C\u662F\u4E0A\u53E4\u4E16\u7EAA\u4E2D\u8F93\u51FA\u80FD\u529B\u6700\u5F3A\u7684\u6CD5\u5E08\u7C7B\u804C\u4E1A\u4E4B\u4E00\u3002\n\u4ED6\u4EEC\u6301\u7EED\u7684\u5F3A\u529B\u8F93\u51FA\u5F80\u5F80\u8D77\u7740\u5173\u952E\u6027\u7684\u4F5C\u7528\uFF0C\u4F46\u7531\u4E8E\u63A7\u5236\u6280\u80FD\u8F83\u5C11\uFF0C\u751F\u5B58\u80FD\u529B\u6BD4\u8F83\u4F4E\u3002\n\u80FD\u5E2E\u52A9\u73A9\u5BB6\u8131\u79BB\u5371\u9669\u4E14\u514D\u75AB\u89E3\u9664\u81EA\u8EAB\u7684\u51CF\u76CA\u72B6\u6001\uFF0C\u4F7F\u73A9\u5BB6\u66F4\u52A0\u7075\u6D3B\u3002"
@@ -2979,18 +2980,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1b242a98ced694881cdae6a66028c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityType: "\u751F\u547D"
   abilitySlot: {fileID: 5401048321281281341, guid: b177bf0115354cb4ca238a63730da37d,
     type: 3}
   spawnFull: 1
   canRecover: 1
   timeRate: 2
   battleTimeRate: 5
-  perHealth: 30
-  baseHealth:
+  reduce: 0
+  baseOnLevel: 1
+  baseAbility:
     baseValue: 100
-    bonusPerLevel: 30
+    bonusPerLevel: 150
   baseRecovery: 8
+  perHealth: 30
 --- !u!114 &8011654566248523690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3003,7 +3005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5254235fd06d674d9b1e5cb38849602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityType: "\u9B54\u6CD5"
   abilitySlot: {fileID: 5401048321281281341, guid: 5e3d04b53e8c1f347a7ec85c0ed22966,
     type: 3}
   spawnFull: 1
@@ -3011,11 +3012,12 @@ MonoBehaviour:
   timeRate: 2
   battleTimeRate: 5
   reduce: 0
-  perMana: 16
-  baseMana:
+  baseOnLevel: 1
+  baseAbility:
     baseValue: 100
-    bonusPerLevel: 20
+    bonusPerLevel: 180
   baseRecovery: 5
+  perMana: 16
 --- !u!114 &2327987739784275762
 MonoBehaviour:
   m_ObjectHideFlags: 0
