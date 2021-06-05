@@ -2,6 +2,7 @@
 // 蓝量能力 法系
 // 能量能力 盗贼 Rogue energy
 // 怒气能力 战士 Warrior rage
+
 public interface IAbility
 {
     int GetHealthBonus(int baseHealth);

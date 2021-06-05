@@ -8,6 +8,8 @@ public abstract class BaseAbility : Ability
     protected IAbility[] _bonusComponents;
     protected IAbility[] bonusComponents =>
         _bonusComponents ?? (_bonusComponents = GetComponents<IAbility>());
+    
+    
 
     // 计算总蓝量
     // 这里定每点耐力30生命

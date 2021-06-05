@@ -27,7 +27,7 @@ public abstract partial class Entity : NetworkBehaviour
     /// <summary>
     /// 角色主能力（生命）
     /// </summary>
-    public Ability ability;
+    public MainAbility ability;
     /// <summary>
     /// 角色扩展能力（蓝，怒气，能量，护甲生命）  
     /// </summary>
