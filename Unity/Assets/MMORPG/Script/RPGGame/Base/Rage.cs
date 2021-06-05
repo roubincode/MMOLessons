@@ -17,7 +17,7 @@ public class Rage : ExAbility
         get
         {
             int bonus = 0;
-            int baseThisLevel = baseRage.Get(level.current);
+            int baseThisLevel = baseRage.Get();
             foreach (IRageBonus bonusComponent in bonusComponents)
                 bonus += bonusComponent.GetRageBonus(baseThisLevel);
             return baseThisLevel + bonus;

@@ -17,7 +17,7 @@ public class Energy : ExAbility
         get
         {
             int bonus = 0;
-            int baseThisLevel = baseEnergy.Get(level.current);
+            int baseThisLevel = baseEnergy.Get();
             foreach (IEnergyBonus bonusComponent in bonusComponents)
                 bonus += bonusComponent.GetEnergyBonus(baseThisLevel);
             return baseThisLevel + bonus;
