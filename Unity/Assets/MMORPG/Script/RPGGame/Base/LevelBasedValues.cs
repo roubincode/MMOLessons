@@ -10,6 +10,7 @@ public struct LinearInt
     public int baseValue;
     public int bonusPerLevel;
     public int Get(int level) => bonusPerLevel * (level - 1) + baseValue;
+    public int Get() => baseValue;
 }
 
 [Serializable]
@@ -18,6 +19,7 @@ public struct LinearLong
     public long baseValue;
     public long bonusPerLevel;
     public long Get(int level) => bonusPerLevel * (level - 1) + baseValue;
+    public long Get() => baseValue;
 }
 
 [Serializable]
@@ -26,6 +28,7 @@ public struct LinearFloat
     public float baseValue;
     public float bonusPerLevel;
     public float Get(int level) => bonusPerLevel * (level - 1) + baseValue;
+    public float Get() => baseValue;
 }
 
 
