@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using ETModel;
 namespace MMOGame
@@ -8,19 +9,28 @@ namespace MMOGame
         {
 	        ResourcesComponent resourcesComponent = Game.Scene.GetComponent<ResourcesComponent>();
 	          
-            GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset("unit.unity3d", "Unit");
+            GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset($"{type}.unity3d", $"{type}");
 	        GameObject prefab = bundleGameObject.Get<GameObject>($"{type}");
 
             return prefab;
         }
 
-        public static UnityEngine.Object[] GetAll()
+        public static GameObject[] GetAll(string type)
         {
 	        ResourcesComponent resourcesComponent = Game.Scene.GetComponent<ResourcesComponent>();
-            GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset("unit.unity3d", "Unit");
+            resourcesComponent.LoadBundle($"{type}.unity3d");
 
+            //加载unit预设并生成实例
+            GameObject bundleGameObject = (GameObject)resourcesComponent.GetAsset($"{type}.unity3d", $"{type}");
 	        UnityEngine.Object[] prefabs = bundleGameObject.GetAll<GameObject>();
-            return prefabs;
+            
+
+            List<GameObject> list = new List<GameObject>();
+            foreach (GameObject go in prefabs)
+            {
+                list.Add(go);
+            }
+            return list.ToArray();
         }
 
     }

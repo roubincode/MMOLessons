@@ -22,7 +22,7 @@ namespace Mirror
         /// 从资源中取得玩家,怪物等角色预制对象
         public List<Entity> FindEntityClasses()
         {
-			UnityEngine.Object[] prefabs = UnitResources.GetAll();
+			GameObject[] prefabs = UnitResources.GetAll("Unit");
 
             List<Entity> classes = new List<Entity>();
             foreach (GameObject prefab in prefabs)
@@ -36,7 +36,7 @@ namespace Mirror
 
         public List<Player> FindPlayerClasses()
         {
-			UnityEngine.Object[] prefabs = UnitResources.GetAll();
+			GameObject[] prefabs = UnitResources.GetAll("Unit");
 
             List<Player> classes = new List<Player>();
             foreach (GameObject prefab in prefabs)
