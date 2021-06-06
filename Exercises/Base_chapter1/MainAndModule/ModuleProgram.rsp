@@ -1,0 +1,6 @@
+#引用Module
+/addmodule:.\Bin\MyFirstModule.netmodule
+/addmodule:.\Bin\MySecondModule.netmodule
+
+#编译输出exe
+/out:.\Bin\ModuleProgram.exe ModuleProgram.cs

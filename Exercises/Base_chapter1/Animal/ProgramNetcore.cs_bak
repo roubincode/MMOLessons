@@ -1,0 +1,9 @@
+using System;
+public class ProgramNetcore
+{
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("dotnet dog");
+    }
+}
