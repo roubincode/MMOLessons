@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AccountScene : SceneState
+public class AccountScene : UIScene
 {
     public AccountScene(UIFacade uIFacade) : base(uIFacade) { }
     public override void EnterScene()
@@ -13,7 +13,7 @@ public class AccountScene : SceneState
         base.EnterScene();
 
         // 打开LoginPanel
-        mUIFacade.GetUI(StringManager.LoginPanel).EnterPanel();
+        mUIFacade.GetUIPanel(StringManager.LoginPanel).EnterPanel();
         Camera.main.GetComponent<Animator>().enabled = true;
     }
 

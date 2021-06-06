@@ -30,7 +30,7 @@ public class MapUIFramePanel : BasePanel
         slot.text.text = "系统：欢迎来到MMORPG游戏的黎明镇！\n愿你有一个美好的游戏体验，快乐游戏，文明游戏。";
 
         btn_setting.onClick.SetListener(() => {
-            mUIFacade.GetUI(StringManager.SettingPanel).EnterPanel();     
+            mUIFacade.GetUIPanel(StringManager.SettingPanel).EnterPanel();     
         });
     }
 

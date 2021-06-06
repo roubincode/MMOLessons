@@ -5,8 +5,8 @@ using Mirror;
 //角色能力基本类，派生类有Mana,Health,Combat等
 public abstract class Ability : NetworkBehaviour
 {
-    public string abilityType;
     public UIAbilitySlot abilitySlot;
+
     int _current = 0;
     /// <summary>
     /// 能力值的当前数值
@@ -43,9 +43,6 @@ public abstract class Ability : NetworkBehaviour
     [NonSerialized]
     public Level level;
 
-    ////////////////////////////////////////////////////////////////////////////
-    // 能力值自动恢复相关的属性
-    // -> 通过这些属性可以决定此项能力值是否可自动恢复，恢复间隔，单位时间恢复量
     /// <summary>
     /// 可否自动恢复
     /// </summary>

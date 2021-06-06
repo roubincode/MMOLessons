@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoleScene : SceneState
+public class RoleScene : UIScene
 {
     public RoleScene(UIFacade uIFacade) : base(uIFacade) { }
     public override void EnterScene()
@@ -14,7 +14,7 @@ public class RoleScene : SceneState
         base.EnterScene();
         
         // 打开SelectRolePanel
-        mUIFacade.GetUI(StringManager.SelectRolePanel).EnterPanel();
+        mUIFacade.GetUIPanel(StringManager.SelectRolePanel).EnterPanel();
         Camera.main.GetComponent<Animator>().enabled = false;
     }
 

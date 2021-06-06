@@ -19,7 +19,6 @@ public class SettingPanel : BasePanel
             ExitPanel();
             RPGManager.Instance.ClearLoaclPlayer();
             mUIFacade.ChangeScene(new RoleScene(mUIFacade));
-            mUIFacade.ExitScene();   
         });
         btn_back.onClick.SetListener(() => {
            ExitPanel(); //局部界面返回只需要退出本界面

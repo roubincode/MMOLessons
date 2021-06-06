@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class SceneState :ISceneState
+public class UIScene :IUIScene
 {
     string sceneName;
     protected UIFacade mUIFacade;
     
-    public SceneState(UIFacade uIFacade)
+    public UIScene(UIFacade uIFacade)
     {
         mUIFacade = uIFacade;
         sceneName = SceneManager.GetActiveScene().name;
@@ -19,5 +19,7 @@ public class SceneState :ISceneState
     public virtual void ExitScene()
     {
         mUIFacade.ClearUIPanelDict();
+        UIScene self = this;
+        self = null;
     }
 }

@@ -29,19 +29,17 @@ public class SelectRolePanel : BasePanel
     void Start(){
         btn_Create.onClick.SetListener(() => {
             ExitPanel();
-            mUIFacade.GetUI(StringManager.CreateRolePanel).EnterPanel();     
+            mUIFacade.GetUIPanel(StringManager.CreateRolePanel).EnterPanel();     
         });
 
         btn_enterMap.onClick.SetListener(() => {
             ExitPanel();
-            mUIFacade.ChangeScene(new CityScene(mUIFacade));
-            mUIFacade.ExitScene();  
+            mUIFacade.ChangeScene(new MapScene(mUIFacade));
         });
 
         btn_back.onClick.SetListener(() => {
             ExitPanel();
             mUIFacade.ChangeScene(new AccountScene(mUIFacade));
-            mUIFacade.ExitScene();//应该是加载新场景完成后执行，暂时直接这里调用
 
             RPGManager.Instance.ClearPlayerList();
         });
@@ -52,6 +50,7 @@ public class SelectRolePanel : BasePanel
         GetComponent<RectTransform>().offsetMin = new Vector2(0.0f, 0.0f);
         GetComponent<RectTransform>().offsetMax = new Vector2(0.0f, 0.0f);
         base.EnterPanel();
+
         RPGManager.Instance.CamLocation(RPGManager.Instance.select_camLocation);
 
         // 动态生成内容不放在Start方法中，要放在EnterPanel方法中
