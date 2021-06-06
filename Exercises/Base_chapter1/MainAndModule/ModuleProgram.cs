@@ -1,5 +1,5 @@
 using System;
-class MainModule
+class ModuleProgram
 {
     static void Main()
     {
