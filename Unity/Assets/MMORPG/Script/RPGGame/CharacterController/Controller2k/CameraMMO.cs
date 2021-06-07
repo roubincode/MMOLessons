@@ -34,7 +34,7 @@ public class CameraMMO : MonoBehaviour
 
         if (!Utils.IsCursorOverUserInterface())
         {
-            // right mouse rotation if we have a mouse
+            // 鼠标右键控制旋转
             if (Input.mousePresent)
             {
                 if (Input.GetMouseButton(mouseButton))

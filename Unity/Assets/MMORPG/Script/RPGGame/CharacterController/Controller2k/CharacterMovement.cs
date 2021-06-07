@@ -223,10 +223,10 @@ public class CharacterMovement : Movement
 
 		// ws为V,ad为H,right:z正方向，0,-x
 		Vector3 right = new Vector3(forward.z, 0, -forward.x);
-		// 向量*方向键输入变量并将两个向量相加
+		// 前右向分别*方向键变量并将两个向量相加
 		targetDirection = forward * v + right * h;
 
-		// Lerp current direction to calculated target direction.
+		// Lerp当前方向到计算的目标方向.
 		if(targetDirection != Vector3.zero)
 		{
 			Quaternion targetRotation = Quaternion.LookRotation (targetDirection);
@@ -235,7 +235,7 @@ public class CharacterMovement : Movement
 			transform.rotation = newRotation;
 			lastDirection =  targetDirection;
 		}
-		// If idle, Ignore current camera facing and consider last moving direction.
+		// 如果站立, 忽略当前相机朝向并保持最后的移动方向.
 		if(!(Mathf.Abs(h) > 0.9 || Mathf.Abs(v) > 0.9))
 		{
 			Repositioning();
