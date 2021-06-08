@@ -4355,9 +4355,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 239240872873783049}
   - {fileID: 1297672949167826694}
   - {fileID: 1100356521997645685}
+  - {fileID: 7734593020117058711}
   - {fileID: 4580660056132914828}
   - {fileID: 7733447911056817451}
   - {fileID: 1307957345527153338}
@@ -4384,7 +4384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn_setting: {fileID: 7733447910253734696}
-  chatContent: {fileID: 239240872652129503}
+  chatContent: {fileID: 7734593020867194689}
   uIAbility: {fileID: 2178563780157627364}
   messageSlot: {fileID: 3209799466308189758, guid: 3d41bc2fe9498ae43bb2741d9a61a24c,
     type: 3}
@@ -4660,7 +4660,7 @@ PrefabInstance:
     - target: {fileID: 4006592688887024895, guid: 221ec1cfd421d7645bd4179218544949,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4006592688887024895, guid: 221ec1cfd421d7645bd4179218544949,
         type: 3}
@@ -4935,7 +4935,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2708920117709892601}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5817558000016903997
+--- !u!1001 &4087897630734230691
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -4990,7 +4990,7 @@ PrefabInstance:
     - target: {fileID: 6047747588912324660, guid: b33e84880d365d24d8befd872dcc323d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6047747588912324660, guid: b33e84880d365d24d8befd872dcc323d,
         type: 3}
@@ -5069,17 +5069,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b33e84880d365d24d8befd872dcc323d, type: 3}
---- !u!224 &239240872873783049 stripped
+--- !u!224 &7734593020117058711 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6047747588912324660, guid: b33e84880d365d24d8befd872dcc323d,
     type: 3}
-  m_PrefabInstance: {fileID: 5817558000016903997}
+  m_PrefabInstance: {fileID: 4087897630734230691}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &239240872652129503 stripped
+--- !u!1 &7734593020867194689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6047747589796924386, guid: b33e84880d365d24d8befd872dcc323d,
     type: 3}
-  m_PrefabInstance: {fileID: 5817558000016903997}
+  m_PrefabInstance: {fileID: 4087897630734230691}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8104346830482397316
 PrefabInstance:
@@ -5131,7 +5131,7 @@ PrefabInstance:
     - target: {fileID: 9168533815709364209, guid: 4ed7b1639d037324699e14098217c21e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9168533815709364209, guid: 4ed7b1639d037324699e14098217c21e,
         type: 3}

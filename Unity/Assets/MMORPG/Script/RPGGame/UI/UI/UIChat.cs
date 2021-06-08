@@ -36,6 +36,10 @@ public partial class UIChat : MonoBehaviour
         UITab uiTab = GetComponent<UITab>();
         uiTab.action = SwitchChannel;
         uiTab.RefreshTab();
+
+        //系统欢迎消息
+        string wel = "欢迎来到MMORPG游戏的黎明镇！\n愿你有一个美好的游戏体验，快乐游戏，文明游戏。";
+        AddMessage(new ChatMessage("系统", localChannel.identifierOut, wel,  localChannel.textPrefab));
     }
     
     void SwitchChannel(string chl){
@@ -102,6 +106,7 @@ public partial class UIChat : MonoBehaviour
         GameObject go = Instantiate(message.textPrefab, content.transform, false);
         go.GetComponent<Text>().text = message.Construct();
         go.GetComponent<UIMessageSlot>().message = message;
+        LayoutRebuilder.ForceRebuildLayoutImmediate((content)as RectTransform);
 
         AutoScroll();
     }
