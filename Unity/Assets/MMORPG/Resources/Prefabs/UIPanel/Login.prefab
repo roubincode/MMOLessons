@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 3376840405530518735}
   - component: {fileID: 3376840405530518732}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: nickNameField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 3376840405549138139}
   - component: {fileID: 3376840405549138136}
   m_Layer: 5
-  m_Name: InputField (1)
+  m_Name: passField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1199,5 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99de773ecc43b1847a9647f03f2eec86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nickName: {fileID: 3376840405530518732}
+  pass: {fileID: 3376840405549138136}
   btn_submit: {fileID: 3376840405555568120}
   btn_register: {fileID: 3376840406389690748}

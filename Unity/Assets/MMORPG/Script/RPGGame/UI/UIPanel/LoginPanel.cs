@@ -5,6 +5,8 @@ using UnityEngine.UI;
 /// </summary>
 public class LoginPanel : BasePanel
 {
+    public InputField nickName;
+    public InputField pass;
     public Button btn_submit;
     public Button btn_register;
     protected override void Awake()
@@ -17,6 +19,8 @@ public class LoginPanel : BasePanel
         btn_submit.onClick.SetListener(() => {
             // 判断登录成功
             // ...
+            nickName.text = "";
+            pass.text = "";
 
             ExitPanel();
             mUIFacade.ChangeScene(new RoleScene(mUIFacade));
