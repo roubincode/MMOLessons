@@ -1,0 +1,4 @@
+/addmodule:.\Bin\Cat.netmodule
+/addmodule:.\Bin\Dog.netmodule
+
+/out:.\Bin\Animal.dll /t:library 

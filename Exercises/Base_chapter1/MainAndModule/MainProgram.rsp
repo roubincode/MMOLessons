@@ -2,4 +2,4 @@
 /r:.\Bin\MyClass.dll
 
 #编译输出exe
-/out:MainProgram.exe MainProgram.cs
+/out:.\Bin\MainProgram.exe .\MainAndModule\MainProgram.cs

@@ -1,0 +1,2 @@
+##Animal2.dll 直接编译指定目录所有cs为一个dll程序集
+/out:.\Bin\Animal2.dll /t:library .\Animal\*.cs

@@ -3,4 +3,4 @@
 /addmodule:.\Bin\MySecondModule.netmodule
 
 #编译输出exe
-/out:.\Bin\ModuleProgram.exe ModuleProgram.cs
+/out:.\Bin\ModuleProgram.exe .\MainAndModule\ModuleProgram.cs

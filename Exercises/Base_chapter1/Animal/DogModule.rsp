@@ -1,0 +1,1 @@
+/out:.\Bin\Dog.netmodule /t:module .\Animal\Dog.cs

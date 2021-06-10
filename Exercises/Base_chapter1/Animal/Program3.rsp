@@ -1,0 +1,2 @@
+##Program3.exe 直接编译指定目录所有cs为一个程序集，有且只能有一个cs有main方法
+/out:.\Bin\Program3.exe .\Animal\*.cs

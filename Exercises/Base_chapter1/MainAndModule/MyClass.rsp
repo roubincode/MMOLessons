@@ -1,0 +1,1 @@
+/out:.\Bin\MyClass.dll /t:library .\MainAndModule\MyClass.cs .\MainAndModule\Assemblyinfo.cs

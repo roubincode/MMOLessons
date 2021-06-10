@@ -1,0 +1,1 @@
+/out:.\Bin\MySecondModule.netmodule /t:module .\MainAndModule\MySecondModule.cs

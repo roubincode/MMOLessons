@@ -1,0 +1,1 @@
+/out:.\Bin\Cat.netmodule /t:module .\Animal\Cat.cs

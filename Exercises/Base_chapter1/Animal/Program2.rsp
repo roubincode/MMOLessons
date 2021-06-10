@@ -1,0 +1,3 @@
+/r:.\Bin\Animal2.dll
+
+/out:.\Bin\Program2.exe  .\Animal\Program.cs
