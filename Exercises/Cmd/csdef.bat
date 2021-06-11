@@ -1,0 +1,1 @@
+path = %envDef%;D:\Program Files\Roslyn;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319
