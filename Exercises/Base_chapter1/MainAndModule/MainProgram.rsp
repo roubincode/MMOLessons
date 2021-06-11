@@ -1,5 +1,6 @@
 #引用程序集
 /r:.\Bin\MyClass.dll
+/r:.\Bin\MyAssembly.dll
 
 #编译输出exe
 /out:.\Bin\MainProgram.exe .\MainAndModule\MainProgram.cs
