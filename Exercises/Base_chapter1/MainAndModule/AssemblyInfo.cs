@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Versioning;
 
 [assembly: AssemblyVersion("2.2.0.0")]
-[assembly: TargetFrameworkAttribute(".NETFramework,Version=v4.7")]
+[assembly: TargetFramework(".NETFramework,Version=v4.7")]
 // 如3.0.6701.9其中
 // 3为主版本号在最前面，后面一个0为副版本号，
 // 再后面6701为编译生成号，最后面的9为修订号。
