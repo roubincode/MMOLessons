@@ -7,7 +7,7 @@ class NetCoreProgram
 {
     private static void Main(string[] args)
     {
-        MyClass.PrintSth();
+        MyNetCoreClass.PrintSth();
         Console.WriteLine("Hello I am NetCoreProgram");
         //MyILClass.PrintSth();
     }
