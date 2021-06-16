@@ -8,7 +8,7 @@ Debug/
 Release/
 obj/
 Bin/
-solution-explorer/
+.vscode/
 
 # unity files #  
 ######################
