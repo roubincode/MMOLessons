@@ -1,8 +1,6 @@
-//引用mscorlib
 .assembly extern mscorlib {
     .ver 4:0:0:0
 }
-//程序集名
 .assembly MyAssembly
 {
     .ver 1:0:1:0
