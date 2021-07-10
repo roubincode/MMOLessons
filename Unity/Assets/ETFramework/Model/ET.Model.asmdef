@@ -1,0 +1,16 @@
+{
+    "name": "ET.Model",
+    "references": [
+        "Unity.ThirdParty",
+        "ET.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+{
+    "name": "ET.Editor",
+    "references": [
+        "Unity.ThirdParty",
+        "ET.Core",
+        "ET.Model"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
